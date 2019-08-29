@@ -1,0 +1,37 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.view-screen {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.view-screen .view {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.view-screen .view h1 {
+  margin: 0;
+}
+
+.view-screen .view.first-view {
+  background-color: red;
+}
+
+.view-screen .view.second-view {
+  background-color: green;
+}
+
+.view-screen .view.third-color {
+  background-color: aqua;
+}
+
+.view-screen .view.fourth-color {
+  background-color: burlywood;
+}
+/*# sourceMappingURL=styles.css.map */
