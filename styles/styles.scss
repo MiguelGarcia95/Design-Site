@@ -2,11 +2,12 @@ html, body {
   margin: 0; padding: 0;
 }
 body {
+  overflow-x: hidden;
   // overflow: hidden;
   width: 100vw;
   height: 100vh;
-  scrollbar-width: none;
--ms-overflow-style: none;
+  // scrollbar-width: none;
+// -ms-overflow-style: none;
 }
 
 .body-wrapper {
@@ -24,22 +25,16 @@ body {
 
 
 ::-webkit-scrollbar {
-  display: none;
+  // display: none;
 }
 
-.block-test {
-  width: 200px; height: 200px;
+.block {
+  width: 300px; height: 200px;
   position: absolute;
-  left: 0; right: 0;
-  top: 0; bottom: 0;
+  bottom: 0; right: 0; left: 0;
   margin: auto;
-  border-radius: 37% 27% 63% 10% / 0% 33% 54% 39%;
+  border-radius: 100% 100% 100% 100% / 100% 100% 100% 100%;
   background-color: #4f3269;
   transition: 0.5s;
   overflow: hidden;
-  &:hover {
-  width: 100vw; height: 100vh;
-
-    border-radius: 53% 16% 45% 35% / 65% 23% 42% 20%;
-  }
 }
