@@ -1,14 +1,18 @@
 var scrollAnim = new TimelineMax();
-var controller = new ScrollMagic.Controller();
+var controller = new ScrollMagic.Controller({vertical: false});
 
-scrollAnim
-  .set('.view', {y: '-100vh'})
-  .to('.first-view', 3, {y: '+= 100vh'})
+// scrollAnim
+// // .set('.slide.one', {width: 0})
+// .to('.slide.one', 1, {width: '100vw'})
+// .to('.block-test', 10, {backgroundColor: 'red'})
 
-new ScrollMagic.Scene({
-  triggerElement: '.scroll-trigger',
-  triggerHook: 0,
-  duration: '300vw',
-})
-.setTween(scrollAnim)
-.addTo(controller)
+// new ScrollMagic.Scene({
+//   triggerElement: '.scroll-trigger',
+//   // offset: 1,
+//   triggerHook: 0,
+//   duration: '100%',
+// })
+// .setTween(scrollAnim)
+// .setPin('.scroll-trigger')
+// .addIndicators()
+// .addTo(controller)

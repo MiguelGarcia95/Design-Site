@@ -1,37 +1,92 @@
 html, body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
-.view-screen {
+.slide {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
 
-.view-screen .view {
-  width: 100%;
-  height: 100%;
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 400vw;
+  -webkit-transform: rotate(90deg) translateY(-100vh);
+          transform: rotate(90deg) translateY(-100vh);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.scroll-trigger {
+  left: 200px;
+}
+
+.one {
+  background: #efdefe;
+  position: fixed;
+  left: 0;
+  margin: auto;
+  display: block;
+  width: 100vw;
+}
+
+.two {
+  background: #4f3269;
+}
+
+.three {
+  background: #39c2c2;
+}
+
+.four {
+  background: #80c558;
+}
+
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  -webkit-transform: rotate(-90deg) translateX(-100vh);
+          transform: rotate(-90deg) translateX(-100vh);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
   position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-.view-screen .view h1 {
-  margin: 0;
+::-webkit-scrollbar {
+  display: none;
 }
 
-.view-screen .view.first-view {
-  background-color: red;
+.block-test {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 37% 27% 63% 10% / 0% 33% 54% 39%;
+  background-color: #4f3269;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow: hidden;
 }
 
-.view-screen .view.second-view {
-  background-color: green;
-}
-
-.view-screen .view.third-color {
-  background-color: aqua;
-}
-
-.view-screen .view.fourth-color {
-  background-color: burlywood;
+.block-test:hover {
+  width: 100vw;
+  height: 100vh;
+  border-radius: 53% 16% 45% 35% / 65% 23% 42% 20%;
 }
 /*# sourceMappingURL=styles.css.map */
