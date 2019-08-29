@@ -1,67 +1,39 @@
 html, body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
-.slide {
+body {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
-}
-
-.wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 400vw;
-  -webkit-transform: rotate(90deg) translateY(-100vh);
-          transform: rotate(90deg) translateY(-100vh);
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
-}
-
-.scroll-trigger {
-  left: 200px;
-}
-
-.one {
-  background: #efdefe;
-  position: fixed;
-  left: 0;
-  margin: auto;
-  display: block;
-  width: 100vw;
-}
-
-.two {
-  background: #4f3269;
-}
-
-.three {
-  background: #39c2c2;
-}
-
-.four {
-  background: #80c558;
-}
-
-.outer-wrapper {
-  width: 100vh;
-  height: 100vw;
-  -webkit-transform: rotate(-90deg) translateX(-100vh);
-          transform: rotate(-90deg) translateX(-100vh);
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  position: absolute;
   scrollbar-width: none;
   -ms-overflow-style: none;
+}
+
+.body-wrapper {
+  width: 100%;
+  height: 400vh;
+}
+
+.body-wrapper .slide {
+  width: 100vw;
+  height: 100vh;
+}
+
+.body-wrapper .slide.one {
+  background: red;
+}
+
+.body-wrapper .slide.two {
+  background: greenyellow;
+}
+
+.body-wrapper .slide.three {
+  background: blanchedalmond;
+}
+
+.body-wrapper .slide.four {
+  background: bisque;
 }
 
 ::-webkit-scrollbar {
