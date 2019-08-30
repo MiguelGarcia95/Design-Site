@@ -28,30 +28,61 @@ body {
   height: 100vh;
 }
 
-.decals .top-right .vertical {
-  position: absolute;
+.decals .top-right .horizontal {
   background-color: white;
+  position: absolute;
   width: 20%;
-  height: 70%;
-  right: 0;
+  height: 30%;
+  right: 20%;
+  border-top-left-radius: 100%;
 }
 
-.decals .top-right .horizontal {
-  position: absolute;
+.decals .top-right .horizontal-detail {
   background-color: white;
-  width: 70%;
+  position: absolute;
+  width: 20%;
   height: 30%;
+  border-bottom-right-radius: 100%;
+  right: 20%;
+  top: 30%;
+}
+
+.decals .top-right .left-detail {
+  background-color: white;
+  position: absolute;
+  width: 20%;
+  height: 60%;
+  right: 40%;
+  border-bottom-left-radius: 100%;
+  border-top-left-radius: 100%;
+}
+
+.decals .top-right .center-detail {
+  background-color: white;
+  position: absolute;
+  width: 20%;
+  height: 30%;
+  border-top-right-radius: 100%;
   right: 0;
 }
 
 .decals .top-right .bottom-detail {
-  position: absolute;
   background-color: white;
+  position: absolute;
   width: 20%;
   height: 30%;
   right: 0;
-  bottom: 0;
+  bottom: 10%;
   border-bottom-left-radius: 100%;
+}
+
+.decals .top-right .middle-detail {
+  background-color: white;
+  position: absolute;
+  width: 20%;
+  height: 30%;
+  right: 0;
+  top: 30%;
 }
 
 .body-wrapper {

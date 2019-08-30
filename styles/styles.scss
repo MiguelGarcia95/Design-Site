@@ -13,8 +13,8 @@ body {
 }
 
 @mixin decal-tr ($width, $height) {
-  position: absolute;
   background-color: white;
+  position: absolute;
   width: $width;
   height: $height;
 }
@@ -37,21 +37,41 @@ body {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    .vertical {
-      @include decal-tr(20%, 70%);
-      // width: 20%;
-      // height: 70%;
-      right: 0;
-    }
+    // .vertical {
+    //   @include decal-tr(20%, 70%);
+    //   right: 0;
+    // }
     .horizontal {
-      @include decal-tr(70%, 30%);
+      @include decal-tr(20%, 30%);
+      right: 20%;
+      border-top-left-radius: 100%;
+    }
+    .horizontal-detail {
+      @include decal-tr(20%, 30%);
+      border-bottom-right-radius: 100%;
+      right: 20%; top: 30%;
+    }
+    .left-detail {
+      @include decal-tr(20%, 60%);
+      right: 40%;
+      border-bottom-left-radius: 100%;
+      border-top-left-radius: 100%;
+      // border-top-right-radius: 50%;
+    }
+    .center-detail {
+      @include decal-tr(20%, 30%);
+      // top: 30%; left: 30%;
+      border-top-right-radius: 100%;
       right: 0;
     }
     .bottom-detail {
       @include decal-tr(20%, 30%);
-      right: 0;
-      bottom: 0;
+      right: 0; bottom: 10%;
       border-bottom-left-radius: 100%;
+    }
+    .middle-detail {
+      @include decal-tr(20%, 30%);
+      right: 0; top: 30%;
     }
   }
 }
