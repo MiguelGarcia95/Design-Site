@@ -12,14 +12,14 @@ body {
 // -ms-overflow-style: none;
 }
 
-@mixin decal-tr ($width, $height) {
-  background-color: white;
+@mixin decal-shadow ($width, $height) {
+  background-color: transparent;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
   position: absolute;
   width: $width;
   height: $height;
 }
 
-// #5824D4
 // #5824D4
 // #6121E9
 // #7462A5
@@ -33,45 +33,14 @@ body {
   width: 100vw;
   height: 100vh;
   top: 0; left: 0;
-  .top-right {
+  .shadows {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    // .vertical {
-    //   @include decal-tr(20%, 70%);
-    //   right: 0;
-    // }
-    .horizontal {
-      @include decal-tr(20%, 30%);
-      right: 20%;
+    .shadow-01 {
+      @include decal-shadow(200px, 200px);
+      right: 25%;
       border-top-left-radius: 100%;
-    }
-    .horizontal-detail {
-      @include decal-tr(20%, 30%);
-      border-bottom-right-radius: 100%;
-      right: 20%; top: 30%;
-    }
-    .left-detail {
-      @include decal-tr(20%, 60%);
-      right: 40%;
-      border-bottom-left-radius: 100%;
-      border-top-left-radius: 100%;
-      // border-top-right-radius: 50%;
-    }
-    .center-detail {
-      @include decal-tr(20%, 30%);
-      // top: 30%; left: 30%;
-      border-top-right-radius: 100%;
-      right: 0;
-    }
-    .bottom-detail {
-      @include decal-tr(20%, 30%);
-      right: 0; bottom: 10%;
-      border-bottom-left-radius: 100%;
-    }
-    .middle-detail {
-      @include decal-tr(20%, 30%);
-      right: 0; top: 30%;
     }
   }
 }
@@ -83,7 +52,9 @@ body {
     width: 100vw;
     height: 100vh;
     position: relative;
-    &.one {background: red;}
+    &.one {
+      background: #5824D4;
+    }
     &.two {background: greenyellow;}
     &.three {background: blanchedalmond;}
     &.four {background: bisque;}
