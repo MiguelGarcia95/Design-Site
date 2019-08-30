@@ -1,5 +1,7 @@
+* {margin: 0;}
 html, body {
   margin: 0; padding: 0;
+  font-family: 'Poppins';
 }
 body {
   overflow-x: hidden;
@@ -10,12 +12,57 @@ body {
 // -ms-overflow-style: none;
 }
 
+@mixin decal-tr ($width, $height) {
+  position: absolute;
+  background-color: white;
+  width: $width;
+  height: $height;
+}
+
+// #5824D4
+// #5824D4
+// #6121E9
+// #7462A5
+// #EDE6F2
+// #A082F4
+// #DF93FC
+// #9AC3FA
+
+.decals {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0; left: 0;
+  .top-right {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    .vertical {
+      @include decal-tr(20%, 70%);
+      // width: 20%;
+      // height: 70%;
+      right: 0;
+    }
+    .horizontal {
+      @include decal-tr(70%, 30%);
+      right: 0;
+    }
+    .bottom-detail {
+      @include decal-tr(20%, 30%);
+      right: 0;
+      bottom: 0;
+      border-bottom-left-radius: 100%;
+    }
+  }
+}
+
 .body-wrapper {
   width: 100%;
   height: 400vh;
   .slide {
     width: 100vw;
     height: 100vh;
+    position: relative;
     &.one {background: red;}
     &.two {background: greenyellow;}
     &.three {background: blanchedalmond;}
