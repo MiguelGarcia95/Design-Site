@@ -35,9 +35,9 @@ body {
 }
 
 .body-wrapper .navbar .logo p {
+  color: white;
   font-size: 2rem;
   line-height: 50px;
-  color: white;
 }
 
 .body-wrapper .navbar .logo div {
@@ -102,19 +102,7 @@ body {
   background: #5824D4;
 }
 
-.body-wrapper .slide.two {
-  background: greenyellow;
-}
-
-.body-wrapper .slide.three {
-  background: blanchedalmond;
-}
-
-.body-wrapper .slide.four {
-  background: bisque;
-}
-
-.body-wrapper .slide .decals {
+.body-wrapper .slide.one .decals {
   position: absolute;
   top: 0;
   right: 0;
@@ -125,7 +113,7 @@ body {
   height: 100vh;
 }
 
-.body-wrapper .slide .decals .shadows {
+.body-wrapper .slide.one .decals .shadows {
   position: absolute;
   top: 0;
   right: 0;
@@ -136,7 +124,7 @@ body {
   height: 100vh;
 }
 
-.body-wrapper .slide .decals .shadows .shadow-01 {
+.body-wrapper .slide.one .decals .shadows .shadow-01 {
   background-color: transparent;
   -webkit-box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
           box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
@@ -147,7 +135,7 @@ body {
   top: 50px;
 }
 
-.body-wrapper .slide .decals .shadows .shadow-02 {
+.body-wrapper .slide.one .decals .shadows .shadow-02 {
   background-color: transparent;
   -webkit-box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
           box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
@@ -158,7 +146,7 @@ body {
   top: 250px;
 }
 
-.body-wrapper .slide .decals .shadows .shadow-03 {
+.body-wrapper .slide.one .decals .shadows .shadow-03 {
   background-color: transparent;
   -webkit-box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
           box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
@@ -169,7 +157,7 @@ body {
   top: 400px;
 }
 
-.body-wrapper .slide .decals .shadows .shadow-04 {
+.body-wrapper .slide.one .decals .shadows .shadow-04 {
   background-color: transparent;
   -webkit-box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
           box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
@@ -180,7 +168,7 @@ body {
   top: 50px;
 }
 
-.body-wrapper .slide .decals .shadows .shadow-05 {
+.body-wrapper .slide.one .decals .shadows .shadow-05 {
   background-color: transparent;
   -webkit-box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
           box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
@@ -191,7 +179,7 @@ body {
   top: 150px;
 }
 
-.body-wrapper .slide .decals .shadows .shadow-06 {
+.body-wrapper .slide.one .decals .shadows .shadow-06 {
   background-color: transparent;
   -webkit-box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
           box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
@@ -202,7 +190,7 @@ body {
   top: 400px;
 }
 
-.body-wrapper .slide .decals .shadows .shadow-07 {
+.body-wrapper .slide.one .decals .shadows .shadow-07 {
   background-color: transparent;
   -webkit-box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
           box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
@@ -213,7 +201,7 @@ body {
   top: 150px;
 }
 
-.body-wrapper .slide .decals .shadows .shadow-08 {
+.body-wrapper .slide.one .decals .shadows .shadow-08 {
   background-color: transparent;
   -webkit-box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
           box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
@@ -224,7 +212,7 @@ body {
   top: 650px;
 }
 
-.body-wrapper .slide .decals .shadows .shadow-09 {
+.body-wrapper .slide.one .decals .shadows .shadow-09 {
   background-color: transparent;
   -webkit-box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
           box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
@@ -235,7 +223,7 @@ body {
   top: 900px;
 }
 
-.body-wrapper .slide .decals .shadows .shadow-10 {
+.body-wrapper .slide.one .decals .shadows .shadow-10 {
   background-color: transparent;
   -webkit-box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
           box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
@@ -246,7 +234,7 @@ body {
   top: 900px;
 }
 
-.body-wrapper .slide .decals .shadows .shadow-11 {
+.body-wrapper .slide.one .decals .shadows .shadow-11 {
   background-color: transparent;
   -webkit-box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
           box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
@@ -257,7 +245,7 @@ body {
   top: 600px;
 }
 
-.body-wrapper .slide .content {
+.body-wrapper .slide.one .content {
   position: absolute;
   top: 0;
   right: 0;
@@ -268,7 +256,7 @@ body {
   height: 100vh;
 }
 
-.body-wrapper .slide .content .title {
+.body-wrapper .slide.one .content .title {
   position: absolute;
   top: 0;
   right: 0;
@@ -277,49 +265,72 @@ body {
   margin: auto;
   width: 500px;
   height: 250px;
+  color: white;
 }
 
-.body-wrapper .slide .content .title .title-decal {
+.body-wrapper .slide.one .content .title .title-decal {
   background-color: white;
   position: absolute;
   -webkit-box-shadow: -50px 50px 5px 0px rgba(0, 0, 0, 0.2);
           box-shadow: -50px 50px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
-.body-wrapper .slide .content .title .top, .body-wrapper .slide .content .title .bottom {
+.body-wrapper .slide.one .content .title .top, .body-wrapper .slide.one .content .title .bottom {
   width: 500px;
   height: 20px;
 }
 
-.body-wrapper .slide .content .title .left, .body-wrapper .slide .content .title .right {
+.body-wrapper .slide.one .content .title .left, .body-wrapper .slide.one .content .title .right {
   width: 20px;
   height: 210px;
   top: 20px;
 }
 
-.body-wrapper .slide .content .title .top {
+.body-wrapper .slide.one .content .title .top {
   top: 0;
 }
 
-.body-wrapper .slide .content .title .bottom {
+.body-wrapper .slide.one .content .title .bottom {
   bottom: 0;
 }
 
-.body-wrapper .slide .content .title .left {
+.body-wrapper .slide.one .content .title .left {
   left: 0;
 }
 
-.body-wrapper .slide .content .title .right {
+.body-wrapper .slide.one .content .title .right {
   right: 0;
 }
 
-.body-wrapper .slide .content .title h1 {
+.body-wrapper .slide.one .content .title h1 {
   width: 500px;
   height: 250px;
   line-height: 250px;
   text-align: center;
   font-size: 10rem;
-  color: white;
+}
+
+.body-wrapper .slide.two {
+  background: #f5ecec;
+}
+
+.body-wrapper .slide.two .content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+.body-wrapper .slide.three {
+  background: blanchedalmond;
+}
+
+.body-wrapper .slide.four {
+  background: bisque;
 }
 
 ::-webkit-scrollbar {
