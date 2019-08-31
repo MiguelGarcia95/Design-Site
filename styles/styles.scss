@@ -77,6 +77,22 @@ body {
           @include decal-shadow(250px, 250px, 15px, 5px);
           left: 1300px; top: 400px;
         }
+        .shadow-07 {
+          @include decal-shadow(250px, 250px, 15px, 5px);
+          left: 1550px; top: 150px;
+        }
+        .shadow-08 {
+          @include decal-shadow(250px, 250px, 15px, 5px);
+          left: 600px; top: 650px;
+        }
+        .shadow-09 {
+          @include decal-shadow(150px, 150px, 15px, 5px);
+          left: 850px; top: 900px;
+        }
+        .shadow-10 {
+          @include decal-shadow(150px, 150px, 15px, 5px);
+          left: 1550px; top: 900px;
+        }
       }
     }
     

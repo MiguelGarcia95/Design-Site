@@ -129,6 +129,50 @@ body {
   top: 400px;
 }
 
+.body-wrapper .slide .decals .shadows .shadow-07 {
+  background-color: transparent;
+  -webkit-box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: 1550px;
+  top: 150px;
+}
+
+.body-wrapper .slide .decals .shadows .shadow-08 {
+  background-color: transparent;
+  -webkit-box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: 600px;
+  top: 650px;
+}
+
+.body-wrapper .slide .decals .shadows .shadow-09 {
+  background-color: transparent;
+  -webkit-box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 850px;
+  top: 900px;
+}
+
+.body-wrapper .slide .decals .shadows .shadow-10 {
+  background-color: transparent;
+  -webkit-box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 1550px;
+  top: 900px;
+}
+
 .body-wrapper .slide .content {
   position: absolute;
   top: 0;
