@@ -336,6 +336,21 @@ body {
   height: 100vh;
 }
 
+.body-wrapper .slide.two .content .decals h1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  font-size: 30rem;
+  height: 450px;
+  line-height: 450px;
+  width: 1400px;
+  right: -1400px;
+  text-align: center;
+  margin: auto;
+  color: #232323;
+  text-shadow: -10px 10px 10px white, 10px 10px 10px black, 10px 10px 10px white;
+}
+
 .body-wrapper .slide.two .content .title {
   right: unset;
   margin-top: 50px;

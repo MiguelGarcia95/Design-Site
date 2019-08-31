@@ -173,8 +173,24 @@ body {
       .content {
         @include centerAbs(100vw, 100vh);      
         .decals {
-          @include centerAbs(100vw, 100vh);          
-          
+          @include centerAbs(100vw, 100vh);       
+          h1 {
+            // opacity: 0.1;
+            position: absolute;
+            top: 0; bottom: 0;
+            font-size: 30rem;
+            height: 450px;
+            line-height: 450px;
+            width: 1400px;
+            // left: -700px;
+            right: -1400px;
+            text-align: center;
+            margin: auto;
+            color: #232323;
+            text-shadow: -10px 10px 10px white,
+                         10px 10px 10px black,
+                         10px 10px 10px white;
+          }
         }
         .title {
           // @include centerAbs(500px, 250px);
