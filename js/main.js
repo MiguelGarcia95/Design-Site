@@ -8,7 +8,7 @@ scrollAnim
 // .to('.title h1', 0.5, {textShadow: '10px -20px 1px rgba(0,0,0,0.2)' }, '-=1')
 
 var sceneOne = new ScrollMagic.Scene({
-  triggerElement: '.scroll-trigger',
+  triggerElement: '.one',
   triggerHook: 0,
   duration: '100%',
 })
@@ -17,7 +17,12 @@ var sceneOne = new ScrollMagic.Scene({
 .addIndicators()
 
 var sceneTwo = new ScrollMagic.Scene({
-
+  triggerElement: '.two',
+  triggerHook: 0,
+  duration: '100%',
 })
+// .setTween(scrollAnim)
+.setPin('.two')
+.addIndicators()
 
-controller.addScene([sceneOne])
+controller.addScene([sceneOne, sceneTwo])
