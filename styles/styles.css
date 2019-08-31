@@ -355,6 +355,8 @@ body {
   right: unset;
   margin-top: 50px;
   color: white;
+  height: 0;
+  overflow: hidden;
 }
 
 .body-wrapper .slide.two .content .title h1 {

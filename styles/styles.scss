@@ -197,13 +197,25 @@ body {
           right: unset;
           margin-top: 50px;
           color: white;
+          height: 0;
+          overflow: hidden;
           h1 {
             width: 600px;
             height: 250px;
+            
             color: #5824D4;
-            // line-height: 250px;
             text-align: center;
             font-size: 5rem;
+          }
+        }
+        .subtitle {
+
+        }
+        .services {
+          .service {
+            .service-icon {}
+            .service-title {}
+            .service-desc {}
           }
         }
       }
