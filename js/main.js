@@ -4,8 +4,8 @@ var controller = new ScrollMagic.Controller();
 // var controller = new ScrollMagic.Controller({vertical: false});
 
 firstScrollAnimation
-.to('.shadow', 1, {top: '100%',})
-.to('.title-decal', 1, {boxShadow: '-50px -50px 5px 0px rgba(0,0,0,0.2)'}, '-=1')
+.to('.one .shadow', 1, {top: '100%',})
+.to('.one .title-decal', 1, {boxShadow: '-50px -50px 5px 0px rgba(0,0,0,0.2)'}, '-=1')
 .to('.tr', 0.5, {transform: 'rotate(0deg)', width: '100%'})
 .to('.tl', 0.5, {transform: 'rotate(90deg)', width: '43px', top: '3px'}, '-=0.5')
 .to('.bl', 0.5, {transform: 'rotate(0deg)', width: '100%'}, '-=0.5')
@@ -23,14 +23,15 @@ var sceneOne = new ScrollMagic.Scene({
 .addIndicators();
 
 secondScrollAnimation
-// .to()
+.to('.two .decals h1', 1, {right: 'unset', left: '-700px', autoAlpha: 0.1})
+.to('.two .title', 1, {})
 
 var sceneTwo = new ScrollMagic.Scene({
   triggerElement: '.two',
   triggerHook: 0,
-  duration: '100%',
+  duration: '200%',
 })
-// .setTween(secondScrollAnimation)
+.setTween(secondScrollAnimation)
 .setPin('.two')
 .addIndicators()
 
