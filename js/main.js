@@ -1,8 +1,9 @@
-var scrollAnim = new TimelineMax();
+var firstScrollAnimation = new TimelineMax();
+var secondScrollAnimation = new TimelineMax();
 var controller = new ScrollMagic.Controller();
 // var controller = new ScrollMagic.Controller({vertical: false});
 
-scrollAnim
+firstScrollAnimation
 .to('.shadow', 1, {top: '100%',})
 .to('.title-decal', 1, {boxShadow: '-50px -50px 5px 0px rgba(0,0,0,0.2)'}, '-=1')
 .to('.tr', 0.5, {transform: 'rotate(0deg)', width: '100%'})
@@ -17,16 +18,19 @@ var sceneOne = new ScrollMagic.Scene({
   triggerHook: 0,
   duration: '100%',
 })
-.setTween(scrollAnim)
+.setTween(firstScrollAnimation)
 .setPin('.title')
-.addIndicators()
+.addIndicators();
+
+secondScrollAnimation
+// .to()
 
 var sceneTwo = new ScrollMagic.Scene({
   triggerElement: '.two',
   triggerHook: 0,
   duration: '100%',
 })
-// .setTween(scrollAnim)
+// .setTween(secondScrollAnimation)
 .setPin('.two')
 .addIndicators()
 

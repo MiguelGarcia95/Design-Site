@@ -325,6 +325,31 @@ body {
   height: 100vh;
 }
 
+.body-wrapper .slide.two .content .decals {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+.body-wrapper .slide.two .content .title {
+  right: unset;
+  margin-top: 50px;
+  color: white;
+}
+
+.body-wrapper .slide.two .content .title h1 {
+  width: 600px;
+  height: 250px;
+  color: #5824D4;
+  text-align: center;
+  font-size: 5rem;
+}
+
 .body-wrapper .slide.three {
   background: blanchedalmond;
 }
