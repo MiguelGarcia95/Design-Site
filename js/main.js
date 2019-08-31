@@ -10,7 +10,7 @@ scrollAnim
 var sceneOne = new ScrollMagic.Scene({
   triggerElement: '.one',
   triggerHook: 0,
-  duration: '100%',
+  duration: '200%',
 })
 .setTween(scrollAnim)
 .setPin('.title')
