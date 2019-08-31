@@ -54,6 +54,8 @@ body {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   top: 0;
+  bottom: unset;
+  left: unset;
   right: 0;
 }
 
@@ -63,7 +65,9 @@ body {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   top: 0;
+  bottom: unset;
   left: 0;
+  right: unset;
 }
 
 .body-wrapper .navbar .logo div.br {
@@ -71,7 +75,9 @@ body {
           transform-origin: bottom right;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  top: unset;
   bottom: 0;
+  left: unset;
   right: 0;
 }
 
@@ -80,8 +86,10 @@ body {
           transform-origin: bottom left;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+  top: unset;
   bottom: 0;
   left: 0;
+  right: unset;
 }
 
 .body-wrapper .slide {

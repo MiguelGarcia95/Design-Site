@@ -29,6 +29,15 @@ body {
   height: $height;
 }
 
+@mixin logoDecal ($origin, $rotate, $left: unset, $right: unset, $top: unset, $bottom: unset) {
+  transform-origin: $origin;
+  transform: rotate($rotate);
+  top: $top; 
+  bottom: $bottom; 
+  left: $left; 
+  right: $right; 
+}
+
 // #5824D4
 // #6121E9
 // #7462A5
@@ -61,27 +70,18 @@ body {
         width: 30px;
         height: 3px;
         background-color: white;
-        // left: 0; right: 0; top: 0; bottom: 0;
         margin: auto;
         &.tr {
-          transform-origin: top right;
-          transform: rotate(-45deg);
-          top: 0; right: 0;
+          @include logoDecal(top right, -45deg, unset, 0, 0, unset);
         }
         &.tl {
-          transform-origin: top left;
-          transform: rotate(45deg);
-          top: 0; left: 0;
+          @include logoDecal(top left, 45deg, 0, unset, 0, unset);
         }
         &.br {
-          transform-origin: bottom right;
-          transform: rotate(45deg);
-          bottom: 0; right: 0;
+          @include logoDecal(bottom right, 45deg, unset, 0, unset, 0);
         }
         &.bl {
-          transform-origin: bottom left;
-          transform: rotate(-45deg);
-          bottom: 0; left: 0;
+          @include logoDecal(bottom left, -45deg, 0, unset, unset, 0);
         }
       }
     }
