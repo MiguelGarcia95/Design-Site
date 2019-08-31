@@ -173,6 +173,17 @@ body {
   top: 900px;
 }
 
+.body-wrapper .slide .decals .shadows .shadow-11 {
+  background-color: transparent;
+  -webkit-box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 1650px;
+  top: 600px;
+}
+
 .body-wrapper .slide .content {
   position: absolute;
   top: 0;

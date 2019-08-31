@@ -93,6 +93,10 @@ body {
           @include decal-shadow(150px, 150px, 15px, 5px);
           left: 1550px; top: 900px;
         }
+        .shadow-11 {
+          @include decal-shadow(150px, 150px, 15px, 5px);
+          left: 1650px; top: 600px;
+        }
       }
     }
     
