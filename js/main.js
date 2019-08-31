@@ -3,19 +3,20 @@ var controller = new ScrollMagic.Controller();
 // var controller = new ScrollMagic.Controller({vertical: false});
 
 scrollAnim
-.to('.shadow-01', 1, {top: '+=90%', boxShadow: 'inset 0 0 15px 5px rgba(0,0,0,0.1)', transform: 'rotate(90deg)'})
-// .to('.block', 1, {backgroundColor: 'green'})
-// .set('.slide', {y: '-100vh'})
-// .set('.slide.one', {width: 0})
-// .to('.slide.one', 2, {y: '-=100vh'})
+.to('.shadow', 1, {top: '100%',})
+// .to('.title h1', 0.5, {textShadow: '10px -20px 1px rgba(0,0,0,0.2)' }, '-=1')
 
-new ScrollMagic.Scene({
+var sceneOne = new ScrollMagic.Scene({
   triggerElement: '.scroll-trigger',
-  // offset: 1,
   triggerHook: 0,
-  duration: '200%',
+  duration: '100%',
 })
 .setTween(scrollAnim)
-.setPin('.one')
+.setPin('.title')
 .addIndicators()
-.addTo(controller)
+
+var sceneTwo = new ScrollMagic.Scene({
+
+})
+
+controller.addScene([sceneOne])
