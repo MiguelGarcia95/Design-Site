@@ -71,18 +71,10 @@ body {
         height: 3px;
         background-color: white;
         margin: auto;
-        &.tr {
-          @include logoDecal(top right, -45deg, unset, 0, 0, unset);
-        }
-        &.tl {
-          @include logoDecal(top left, 45deg, 0, unset, 0, unset);
-        }
-        &.br {
-          @include logoDecal(bottom right, 45deg, unset, 0, unset, 0);
-        }
-        &.bl {
-          @include logoDecal(bottom left, -45deg, 0, unset, unset, 0);
-        }
+        &.tr {@include logoDecal(top right, -45deg, unset, 0, 0, unset);}
+        &.tl {@include logoDecal(top left, 45deg, 0, unset, 0, unset);}
+        &.br {@include logoDecal(bottom right, 45deg, unset, 0, unset, 0);}
+        &.bl {@include logoDecal(bottom left, -45deg, 0, unset, unset, 0);}
       }
     }
   }
