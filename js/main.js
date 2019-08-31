@@ -4,6 +4,7 @@ var controller = new ScrollMagic.Controller();
 
 scrollAnim
 .to('.shadow', 1, {top: '100%',})
+.to('.title-decal', 1, {boxShadow: '-50px -50px 5px 0px rgba(0,0,0,0.2)'}, '-=1')
 // .to('.title h1', 0.5, {textShadow: '10px -20px 1px rgba(0,0,0,0.2)' }, '-=1')
 
 var sceneOne = new ScrollMagic.Scene({
