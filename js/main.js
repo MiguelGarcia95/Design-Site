@@ -38,7 +38,12 @@ var sceneTwo = new ScrollMagic.Scene({
 .setPin('.two')
 .addIndicators();
 
-// thirdScrollAnimation
+thirdScrollAnimation
+.to('.left-decal', 1, {height: '500px'})
+.to('.left-decal', 1, {overflow: 'visible', transform: 'rotate(45deg)'})
+.to('.left-group', 1, {left: '+=20%', top: '+=20%'})
+.to('.right-group', 1, {right: '+=20%', bottom: '+=20%'}, '-=1')
+// .to('.three .left-decal', 1, {height: '500px'})
 
 var sceneThree = new ScrollMagic.Scene({
   triggerElement: '.three',

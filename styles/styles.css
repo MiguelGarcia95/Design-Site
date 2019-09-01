@@ -475,14 +475,19 @@ body {
 
 .body-wrapper .slide.three .content .decals .left-decal {
   width: 500px;
-  height: 500px;
+  height: 0px;
   position: absolute;
   left: 200px;
+  overflow: hidden;
   top: 0;
   bottom: 0;
   margin: auto;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+}
+
+.body-wrapper .slide.three .content .decals .left-decal .left-group, .body-wrapper .slide.three .content .decals .left-decal .right-group {
+  position: absolute;
+  width: 500px;
+  height: 500px;
 }
 
 .body-wrapper .slide.three .content .decals .left-decal .cube {
@@ -505,7 +510,7 @@ body {
 }
 
 .body-wrapper .slide.three .content .decals .left-decal .cube.bottom {
-  top: 500px;
+  bottom: 0;
 }
 
 .body-wrapper .slide.three .content .decals .left-decal .cube.left {
