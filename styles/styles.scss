@@ -193,26 +193,47 @@ body {
           }
         }
         .title {
-          // @include centerAbs(500px, 250px);
           right: unset;
           margin-top: 50px;
-          color: white;
           height: 0;
           overflow: hidden;
           h1 {
             width: 600px;
             height: 250px;
-            
             color: #5824D4;
             text-align: center;
             font-size: 5rem;
           }
         }
         .subtitle {
-
+          @include centerAbs(100vw, 100vh);       
+          left: unset;
+          height: 0;
+          overflow: hidden;
+          left: 500px;
+          top: 350px;
+          h2 {
+            width: 200px;
+            color: #5824D4;
+            font-size: 1.5rem;
+          }
         }
         .services {
+          width: 1500px;
+          background-color: red;
+          top: 0; bottom: 0;
+          height: 400px;;
+          margin: auto;
+          position: absolute;
           .service {
+            .shadow {
+              .title-decal {
+                &.top {}
+                &.bottom {}
+                &.right {}
+                &.left {}
+              }
+            }
             .service-icon {}
             .service-title {}
             .service-desc {}

@@ -354,7 +354,6 @@ body {
 .body-wrapper .slide.two .content .title {
   right: unset;
   margin-top: 50px;
-  color: white;
   height: 0;
   overflow: hidden;
 }
@@ -365,6 +364,38 @@ body {
   color: #5824D4;
   text-align: center;
   font-size: 5rem;
+}
+
+.body-wrapper .slide.two .content .subtitle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  left: unset;
+  height: 0;
+  overflow: hidden;
+  left: 500px;
+  top: 350px;
+}
+
+.body-wrapper .slide.two .content .subtitle h2 {
+  width: 200px;
+  color: #5824D4;
+  font-size: 1.5rem;
+}
+
+.body-wrapper .slide.two .content .services {
+  width: 1500px;
+  background-color: red;
+  top: 0;
+  bottom: 0;
+  height: 400px;
+  margin: auto;
+  position: absolute;
 }
 
 .body-wrapper .slide.three {
