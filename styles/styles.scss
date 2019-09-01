@@ -193,20 +193,20 @@ body {
         .title {
           @include centerAbs(100vw, 100vh);       
           right: unset;
-          margin-top: 50px;
+          margin-top: 25px;
           height: 0;
           overflow: hidden;
           h1 {
             width: 600px;
-            height: 250px;
+            height: 200px;
             color: #5824D4;
             text-align: center;
             font-size: 5rem;
           }
         }
         .services {
-          width: 1200px;
-          bottom: 150px;
+          width: 1500px;
+          bottom: 100px;
           left: 0; right: 0;
           height: 400px;
           margin: auto;
@@ -217,11 +217,11 @@ body {
             float: left;
             padding: 25px;
             box-sizing: border-box;
-            margin: 0 50px;
+            margin: 0 100px;
             position: relative;
             .shadows {
               .title-decal {
-                background-color: #232323;
+                background-color: #5824D4;
                 position: absolute;
                 box-shadow: -50px 50px 5px 0px rgba(0,0,0,0.1);
                 &.bottom, &.top {
@@ -241,7 +241,12 @@ body {
               }
             }
             .service-icon {}
-            .service-title {}
+            .service-title {
+              font-size: 2rem;
+              left: -50px;
+              top: -80px;
+              position: absolute;
+            }
             .service-desc {}
           }
         }

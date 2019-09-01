@@ -361,22 +361,22 @@ body {
   width: 100vw;
   height: 100vh;
   right: unset;
-  margin-top: 50px;
+  margin-top: 25px;
   height: 0;
   overflow: hidden;
 }
 
 .body-wrapper .slide.two .content .title h1 {
   width: 600px;
-  height: 250px;
+  height: 200px;
   color: #5824D4;
   text-align: center;
   font-size: 5rem;
 }
 
 .body-wrapper .slide.two .content .services {
-  width: 1200px;
-  bottom: 150px;
+  width: 1500px;
+  bottom: 100px;
   left: 0;
   right: 0;
   height: 400px;
@@ -391,12 +391,12 @@ body {
   padding: 25px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0 50px;
+  margin: 0 100px;
   position: relative;
 }
 
 .body-wrapper .slide.two .content .services .service .shadows .title-decal {
-  background-color: #232323;
+  background-color: #5824D4;
   position: absolute;
   -webkit-box-shadow: -50px 50px 5px 0px rgba(0, 0, 0, 0.1);
           box-shadow: -50px 50px 5px 0px rgba(0, 0, 0, 0.1);
@@ -428,6 +428,13 @@ body {
 
 .body-wrapper .slide.two .content .services .service .shadows .title-decal.left {
   left: 0;
+}
+
+.body-wrapper .slide.two .content .services .service .service-title {
+  font-size: 2rem;
+  left: -50px;
+  top: -80px;
+  position: absolute;
 }
 
 .body-wrapper .slide.three {
