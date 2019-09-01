@@ -670,7 +670,7 @@ body {
 }
 
 .body-wrapper .slide.four .content .contactus:hover {
-  border-radius: 51% 85% 49% 93% / 68% 86% 56% 75%;
+  border-radius: 51% 85% 66% 75% / 80% 86% 56% 54%;
 }
 
 .body-wrapper .slide.four .content .contactus input {
@@ -687,6 +687,22 @@ body {
   text-align: center;
   background: transparent;
   border-bottom: 2px solid white;
+  color: white;
+  font-family: 'Poppins';
+}
+
+.body-wrapper .slide.four .content .footer {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  padding: 0 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.body-wrapper .slide.four .content .footer p {
+  line-height: 100px;
 }
 
 ::-webkit-scrollbar {

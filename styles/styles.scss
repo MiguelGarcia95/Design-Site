@@ -379,7 +379,7 @@ body {
           border-radius:9% 91% 30% 70% / 14% 50% 50% 86%;
           transition: 0.5s;
           &:hover {
-            border-radius: 51% 85% 49% 93% / 68% 86% 56% 75%;
+            border-radius: 51% 85% 66% 75% / 80% 86% 56% 54% ;
           }
           input {
             position: absolute;
@@ -393,10 +393,20 @@ body {
             text-align: center;
             background: transparent;
             border-bottom: 2px solid white;
+            color: white;
+            font-family: 'Poppins';
           }
         }
         .footer {
-
+          width: 100vw;
+          position: absolute;
+          bottom: 0;
+          height: 100px;
+          padding: 0 50px;
+          box-sizing: border-box;
+          p {
+            line-height: 100px;
+          }
         }
       }
     }
