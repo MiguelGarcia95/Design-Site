@@ -175,14 +175,12 @@ body {
         .decals {
           @include centerAbs(100vw, 100vh);       
           h1 {
-            // opacity: 0.1;
             position: absolute;
             top: 0; bottom: 0;
             font-size: 30rem;
             height: 450px;
             line-height: 450px;
             width: 1400px;
-            // left: -700px;
             right: -1400px;
             text-align: center;
             margin: auto;
@@ -193,6 +191,7 @@ body {
           }
         }
         .title {
+          @include centerAbs(100vw, 100vh);       
           right: unset;
           margin-top: 50px;
           height: 0;
@@ -203,19 +202,6 @@ body {
             color: #5824D4;
             text-align: center;
             font-size: 5rem;
-          }
-        }
-        .subtitle {
-          @include centerAbs(100vw, 100vh);       
-          left: unset;
-          height: 0;
-          overflow: hidden;
-          left: 500px;
-          top: 350px;
-          h2 {
-            width: 200px;
-            color: #5824D4;
-            font-size: 1.5rem;
           }
         }
         .services {
