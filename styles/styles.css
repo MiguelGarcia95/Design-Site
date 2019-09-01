@@ -2,6 +2,44 @@
   margin: 0;
 }
 
+input::-webkit-input-placeholder {
+  color: white;
+  opacity: 1;
+  font-family: 'Poppins';
+}
+
+input:-ms-input-placeholder {
+  color: white;
+  opacity: 1;
+  font-family: 'Poppins';
+}
+
+input::-ms-input-placeholder {
+  color: white;
+  opacity: 1;
+  font-family: 'Poppins';
+}
+
+input::placeholder {
+  color: white;
+  opacity: 1;
+  font-family: 'Poppins';
+}
+
+input:-ms-input-placeholder {
+  color: white;
+  font-family: 'Poppins';
+}
+
+input::-ms-input-placeholder {
+  color: white;
+  font-family: 'Poppins';
+}
+
+input:focus {
+  outline: none;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -12,6 +50,8 @@ body {
   overflow-x: hidden;
   width: 100vw;
   height: 100vh;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .body-wrapper {
@@ -568,7 +608,85 @@ body {
 }
 
 .body-wrapper .slide.four {
-  background: bisque;
+  background: #f5ecec;
+}
+
+.body-wrapper .slide.four .content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+.body-wrapper .slide.four .content .decals {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+.body-wrapper .slide.four .content .title {
+  position: absolute;
+  left: 50px;
+  width: 450px;
+  height: 80px;
+  bottom: unset;
+  overflow: hidden;
+  top: 100px;
+}
+
+.body-wrapper .slide.four .content .title h1 {
+  color: #5824D4;
+  line-height: 80px;
+  font-size: 5rem;
+}
+
+.body-wrapper .slide.four .content .details {
+  position: absolute;
+  left: 50px;
+  width: 450px;
+  top: 210px;
+}
+
+.body-wrapper .slide.four .content .contactus {
+  position: absolute;
+  background-color: #5824D4;
+  width: 350px;
+  height: 250px;
+  right: 0;
+  top: 150px;
+  right: 150px;
+  border-radius: 9% 91% 30% 70% / 14% 50% 50% 86%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.body-wrapper .slide.four .content .contactus:hover {
+  border-radius: 51% 85% 49% 93% / 68% 86% 56% 75%;
+}
+
+.body-wrapper .slide.four .content .contactus input {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 200px;
+  border: none;
+  padding: 10px;
+  height: 30px;
+  text-align: center;
+  background: transparent;
+  border-bottom: 2px solid white;
 }
 
 ::-webkit-scrollbar {
