@@ -1,6 +1,7 @@
 var firstScrollAnimation = new TimelineMax();
 var secondScrollAnimation = new TimelineMax();
 var thirdScrollAnimation = new TimelineMax();
+var fourthScrollAnimation = new TimelineMax();
 var controller = new ScrollMagic.Controller();
 // var controller = new ScrollMagic.Controller({vertical: false});
 
