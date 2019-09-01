@@ -40,14 +40,13 @@ var sceneTwo = new ScrollMagic.Scene({
 
 thirdScrollAnimation
 .to('.left-decal', 1, {height: '500px'})
-.to('.left-decal', 1, {overflow: 'visible', transform: 'rotate(45deg)'})
-.to('.three .title', 1.5, {height: '160px'})
+.to('.three .title', 1.5, {height: '160px'}, '-=1')
 .to('.three .title', 0.1, {textShadow: '-10px 10px 5px rgba(0,0,0,0.1)'})
-.to('.three .subtitle', 1, {scale: 1})
-.to('.details', 1, {scale: 1})
-.to('.left-group', 1, {left: '+=20%', top: '+=20%'})
-.to('.right-group', 1, {right: '+=20%', bottom: '+=20%'}, '-=1')
-// .to('.three .left-decal', 1, {height: '500px'})
+.to('.left-decal', 1, {overflow: 'visible', transform: 'rotate(45deg)'})
+.to('.three .subtitle', 1, {scale: 1}, '-=1')
+.to('.details', 1, {scale: 1}, '-=0.5')
+.to('.left-group', 1, {left: '+=20%', top: '+=20%'}, '-=1')
+.to('.right-group', 1, {right: '+=20%', bottom: '+=20%'}, '-=1');
 
 var sceneThree = new ScrollMagic.Scene({
   triggerElement: '.three',
@@ -58,4 +57,15 @@ var sceneThree = new ScrollMagic.Scene({
 .setPin('.three')
 .addIndicators();
 
-controller.addScene([sceneOne, sceneTwo, sceneThree]);
+fourthScrollAnimation
+
+var sceneFour = new ScrollMagic.Scene({
+  triggerElement: '.four',
+  triggerHook: 0,
+  duration: '250%'
+})
+.setTween(fourthScrollAnimation)
+.setPin('.four')
+.addIndicators();
+
+controller.addScene([sceneOne, sceneTwo, sceneThree, sceneFour]);
