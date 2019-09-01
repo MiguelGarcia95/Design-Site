@@ -202,6 +202,7 @@ body {
             color: #5824D4;
             text-align: center;
             font-size: 5rem;
+            text-shadow: -10px 10px 5px rgba(0,0,0,0.1);
           }
         }
         .services {
@@ -219,6 +220,8 @@ body {
             box-sizing: border-box;
             margin: 0 100px;
             position: relative;
+            transform: scale(0);
+            opacity: 0;
             .shadows {
               .title-decal {
                 background-color: #5824D4;

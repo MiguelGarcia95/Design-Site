@@ -23,13 +23,17 @@ var sceneOne = new ScrollMagic.Scene({
 .addIndicators();
 
 secondScrollAnimation
-.to('.two .decals h1', 1, {right: 'unset', left: '-700px', autoAlpha: 0.02})
+.to('.two .decals h1', 2, {right: 'unset', left: '-700px', autoAlpha: 0.02})
 .to('.two .title', 1, {height: '200px'})
+.to('.service', 1, {autoAlpha: 1, scale: 1})
+// .to('.service', 1, {autoAlpha: 0, scale: 0}, '+=1')
+// .to('.two .decals h1', 1, {autoAlpha: 0.1})
+
 
 var sceneTwo = new ScrollMagic.Scene({
   triggerElement: '.two',
   triggerHook: 0,
-  duration: '200%',
+  duration: '250%',
 })
 .setTween(secondScrollAnimation)
 .setPin('.two')
