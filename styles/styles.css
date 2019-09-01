@@ -493,6 +493,8 @@ body {
 .body-wrapper .slide.three .content .decals .left-decal .cube {
   position: absolute;
   background-color: #5824D4;
+  -webkit-box-shadow: -50px 50px 15px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: -50px 50px 15px 0px rgba(0, 0, 0, 0.2);
 }
 
 .body-wrapper .slide.three .content .decals .left-decal .cube.top, .body-wrapper .slide.three .content .decals .left-decal .cube.bottom {
@@ -525,16 +527,17 @@ body {
   position: absolute;
   right: 100px;
   width: 450px;
-  height: 160px;
+  height: 0px;
   bottom: unset;
+  overflow: hidden;
   top: 150px;
 }
 
 .body-wrapper .slide.three .content .title h1 {
   color: #5824D4;
+  margin-left: 20px;
   line-height: 80px;
   font-size: 3rem;
-  text-shadow: -10px 10px 5px rgba(0, 0, 0, 0.1);
 }
 
 .body-wrapper .slide.three .content .subtitle {
@@ -544,6 +547,8 @@ body {
   height: 40px;
   bottom: unset;
   top: 350px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 
 .body-wrapper .slide.three .content .subtitle h2 {
@@ -558,6 +563,8 @@ body {
   width: 450px;
   bottom: unset;
   top: 450px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 
 .body-wrapper .slide.four {
