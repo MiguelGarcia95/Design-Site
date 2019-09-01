@@ -473,6 +473,49 @@ body {
   height: 100vh;
 }
 
+.body-wrapper .slide.three .content .decals .left-decal {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  left: 200px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.body-wrapper .slide.three .content .decals .left-decal .cube {
+  position: absolute;
+  background-color: #5824D4;
+}
+
+.body-wrapper .slide.three .content .decals .left-decal .cube.top, .body-wrapper .slide.three .content .decals .left-decal .cube.bottom {
+  width: 500px;
+  height: 10px;
+}
+
+.body-wrapper .slide.three .content .decals .left-decal .cube.left, .body-wrapper .slide.three .content .decals .left-decal .cube.right {
+  height: 500px;
+  width: 10px;
+}
+
+.body-wrapper .slide.three .content .decals .left-decal .cube.top {
+  top: 0px;
+}
+
+.body-wrapper .slide.three .content .decals .left-decal .cube.bottom {
+  top: 500px;
+}
+
+.body-wrapper .slide.three .content .decals .left-decal .cube.left {
+  left: 0;
+}
+
+.body-wrapper .slide.three .content .decals .left-decal .cube.right {
+  right: 0;
+}
+
 .body-wrapper .slide.three .content .title {
   position: absolute;
   right: 100px;

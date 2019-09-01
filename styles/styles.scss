@@ -264,7 +264,32 @@ body {
       .content {
         @include centerAbs(100vw, 100vh);      
         .decals {
-          @include centerAbs(100vw, 100vh);      
+          @include centerAbs(100vw, 100vh);
+          .left-decal {
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            left: 200px;
+            top: 0; bottom: 0;
+            margin: auto;
+            transform: rotate(45deg);
+            .cube {
+              position: absolute;
+              background-color: #5824D4;
+              &.top, &.bottom {
+                width: 500px;
+                height: 10px;
+              }
+              &.left, &.right {
+                height: 500px;
+                width: 10px;
+              }
+              &.top {top: 0px;}
+              &.bottom {top: 500px;}
+              &.left {left: 0;}
+              &.right { right: 0;}
+            }
+          }      
         }
         .title {
           position: absolute;
@@ -283,7 +308,6 @@ body {
           }
         }
         .subtitle {
-          // @include centerAbs(100vw, 100vh);       
           position: absolute;
           right: 100px;
           width: 450px;
