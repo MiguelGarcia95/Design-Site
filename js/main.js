@@ -60,8 +60,9 @@ var sceneThree = new ScrollMagic.Scene({
 fourthScrollAnimation
 .to('.four .title', 1, {height: '80px'})
 .to('.four .details', 1, {scale: 1}, '-=0.5')
-.to('.four .contactus', 1, {height: '250px',})
+.to('.four .contactus', 1, {height: '250px', width: '350px'}, '-=1')
 .to('.four input', 1, {scale: 1,})
+.to('.four .footer', 1, {scale: 1, autoAlpha: 1})
 
 var sceneFour = new ScrollMagic.Scene({
   triggerElement: '.four',
