@@ -1,5 +1,6 @@
 var firstScrollAnimation = new TimelineMax();
 var secondScrollAnimation = new TimelineMax();
+var thirdScrollAnimation = new TimelineMax();
 var controller = new ScrollMagic.Controller();
 // var controller = new ScrollMagic.Controller({vertical: false});
 
@@ -23,12 +24,9 @@ var sceneOne = new ScrollMagic.Scene({
 .addIndicators();
 
 secondScrollAnimation
-.to('.two .decals h1', 2, {right: 'unset', left: '-700px', autoAlpha: 0.02})
+.to('.two .decals h1', 1.5, {right: 'unset', left: '-700px', autoAlpha: 0.02})
 .to('.two .title', 1, {height: '200px'})
-.to('.service', 1, {autoAlpha: 1, scale: 1})
-// .to('.service', 1, {autoAlpha: 0, scale: 0}, '+=1')
-// .to('.two .decals h1', 1, {autoAlpha: 0.1})
-
+.to('.service', 1, {autoAlpha: 1, scale: 1});
 
 var sceneTwo = new ScrollMagic.Scene({
   triggerElement: '.two',
@@ -37,6 +35,17 @@ var sceneTwo = new ScrollMagic.Scene({
 })
 .setTween(secondScrollAnimation)
 .setPin('.two')
-.addIndicators()
+.addIndicators();
 
-controller.addScene([sceneOne, sceneTwo])
+// thirdScrollAnimation
+
+var sceneThree = new ScrollMagic.Scene({
+  triggerElement: '.three',
+  triggerHook: 0,
+  duration: '100%',
+})
+.setTween(thirdScrollAnimation)
+.setPin('.three')
+.addIndicators();
+
+controller.addScene([sceneOne, sceneTwo, sceneThree]);
