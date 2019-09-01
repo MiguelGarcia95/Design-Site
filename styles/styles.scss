@@ -352,7 +352,7 @@ body {
           position: absolute;
           left: 50px;
           width: 450px;
-          height: 80px;
+          height: 0;
           bottom: unset;
           overflow: hidden;
           top: 100px;
@@ -367,12 +367,13 @@ body {
           left: 50px;
           width: 450px;
           top: 210px;
-          // transform: scale(0);
+          transform: scale(0);
         }
         .contactus {
           position: absolute;
           background-color: #5824D4;
-          width: 350px; height: 250px;
+          width: 350px; height: 0px;
+          overflow: hidden;
           right: 0;
           top: 150px;
           right: 150px;
@@ -395,6 +396,7 @@ body {
             border-bottom: 2px solid white;
             color: white;
             font-family: 'Poppins';
+            transform: scale(0);
           }
         }
         .footer {
@@ -406,6 +408,11 @@ body {
           box-sizing: border-box;
           p {
             line-height: 100px;
+            a {
+              color: #5824D4;
+              font-weight: 600;
+              text-decoration: none;
+            }
           }
         }
       }

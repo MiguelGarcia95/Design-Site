@@ -637,7 +637,7 @@ body {
   position: absolute;
   left: 50px;
   width: 450px;
-  height: 80px;
+  height: 0;
   bottom: unset;
   overflow: hidden;
   top: 100px;
@@ -654,13 +654,16 @@ body {
   left: 50px;
   width: 450px;
   top: 210px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 
 .body-wrapper .slide.four .content .contactus {
   position: absolute;
   background-color: #5824D4;
   width: 350px;
-  height: 250px;
+  height: 0px;
+  overflow: hidden;
   right: 0;
   top: 150px;
   right: 150px;
@@ -689,6 +692,8 @@ body {
   border-bottom: 2px solid white;
   color: white;
   font-family: 'Poppins';
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 
 .body-wrapper .slide.four .content .footer {
@@ -703,6 +708,12 @@ body {
 
 .body-wrapper .slide.four .content .footer p {
   line-height: 100px;
+}
+
+.body-wrapper .slide.four .content .footer p a {
+  color: #5824D4;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 ::-webkit-scrollbar {
