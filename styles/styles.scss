@@ -205,19 +205,39 @@ body {
           }
         }
         .services {
-          width: 1500px;
-          background-color: red;
-          top: 0; bottom: 0;
-          height: 400px;;
+          width: 1200px;
+          bottom: 150px;
+          left: 0; right: 0;
+          height: 400px;
           margin: auto;
           position: absolute;
           .service {
-            .shadow {
+            width: 300px;
+            height: 100%;
+            float: left;
+            padding: 25px;
+            box-sizing: border-box;
+            margin: 0 50px;
+            position: relative;
+            .shadows {
               .title-decal {
-                &.top {}
-                &.bottom {}
-                &.right {}
-                &.left {}
+                background-color: #232323;
+                position: absolute;
+                box-shadow: -50px 50px 5px 0px rgba(0,0,0,0.1);
+                &.bottom, &.top {
+                  width: 300px;
+                  height: 20px;
+                  left: 0;
+                }
+                &.left, &.right {
+                  width: 20px;
+                  height: 360px;
+                  top: 20px;
+                }
+                &.top {top: 0;}
+                &.bottom {bottom: 0;}
+                &.right { right: 0; }
+                &.left {left: 0;}
               }
             }
             .service-icon {}

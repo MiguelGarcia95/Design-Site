@@ -23,7 +23,7 @@ var sceneOne = new ScrollMagic.Scene({
 .addIndicators();
 
 secondScrollAnimation
-.to('.two .decals h1', 1, {right: 'unset', left: '-700px', autoAlpha: 0.1})
+.to('.two .decals h1', 1, {right: 'unset', left: '-700px', autoAlpha: 0.02})
 .to('.two .title', 1, {height: '250px'})
 
 var sceneTwo = new ScrollMagic.Scene({
