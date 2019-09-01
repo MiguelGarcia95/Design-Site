@@ -437,6 +437,12 @@ body {
   position: absolute;
 }
 
+.body-wrapper .slide.two .content .services .service .service-desc {
+  text-align: center;
+  font-size: 1rem;
+  padding: 0 5px;
+}
+
 .body-wrapper .slide.three {
   background: blanchedalmond;
 }

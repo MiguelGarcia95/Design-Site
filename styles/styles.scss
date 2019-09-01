@@ -240,14 +240,18 @@ body {
                 &.left {left: 0;}
               }
             }
-            .service-icon {}
+            // .service-icon {}
             .service-title {
               font-size: 2rem;
               left: -50px;
               top: -80px;
               position: absolute;
             }
-            .service-desc {}
+            .service-desc {
+              text-align: center;
+              font-size: 1rem;
+              padding: 0 5px;
+            }
           }
         }
       }
