@@ -278,6 +278,15 @@ body {
             overflow: hidden;
             top: 0; bottom: 0;
             margin: auto;
+            .btn {
+              position: absolute;
+              width: 200px;
+              height: 50px;
+              left: 0; right: 0;
+              top: 0; bottom: 0;
+              margin: auto;
+              text-align: center;
+            }
             .left-group, .right-group {
               position: absolute;
               width: 500px;
