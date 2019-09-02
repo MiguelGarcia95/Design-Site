@@ -322,6 +322,7 @@ body {
               font-size: 1.1rem;
               border: 2px solid #5824D4;
               cursor: pointer;
+              background-color: #f5ecec;
               z-index: 9;
             }
             .left-group, .right-group {
@@ -488,7 +489,28 @@ body {
 }
 
 @media(max-width: 1350px) {
-  
+  .body-wrapper {
+    .slide {
+      &.three {
+        .content {
+          .decals {
+            .left-decal {
+              width: 400px;
+              left: 150px;
+              .left-group, .right-group {width: 400px; height: 400px;}
+              .cube {
+                &.top, &.bottom {width: 400px;}
+                &.left, &.right {height: 400px;}
+              }
+            }      
+          }
+          .title {right: 50px; width: 400px;}
+          .subtitle {right: 50px; width: 400px;}
+          .details {right: 50px; width: 400px;}
+        }
+      }
+    }
+  }
 }
 
 @media(max-width: 1250px) {
@@ -528,6 +550,72 @@ body {
   }
 }
 
+@media(max-width: 1150px) {
+  .body-wrapper {
+    .slide {
+      &.three {
+        .content {
+          .decals {
+            .left-decal {
+              width: 400px;
+              left: 150px;
+              // top: 0; bottom: 0;
+              .btn {
+                // width: 200px;
+                // height: 50px;
+                // left: 0; right: 0;
+                // top: 0; bottom: 0;
+                // line-height: 50px;
+                // font-size: 1.1rem;
+
+              }
+              .left-group, .right-group {
+                width: 400px;
+                height: 400px;
+              }
+              .cube {
+                // box-shadow: -50px 50px 15px 0px rgba(0,0,0,0.2);
+                &.top, &.bottom {
+                  width: 400px;
+                  // height: 10px;
+                }
+                &.left, &.right {
+                  height: 400px;
+                  // width: 10px;
+                }
+              }
+            }      
+          }
+          .title {
+            right: 50px;
+            width: 400px;
+            // top: 150px;
+            h1 {
+              // margin-left: 20px;
+              // line-height: 80px;
+              // font-size: 3rem;
+            }
+          }
+          .subtitle {
+            right: 50px;
+            width: 400px;
+            // height: 40px;
+            // top: 350px;
+            h2 {
+              // line-height: 40px;
+              // font-size: 1.1rem;
+            }
+          }
+          .details {
+            right: 50px;
+            width: 400px;
+            // top: 450px;
+          }
+        }
+      }
+    }
+  }
+}
 
 @media(max-width: 950px) {
   .body-wrapper {

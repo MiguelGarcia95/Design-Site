@@ -40,9 +40,10 @@ var sceneTwo = new ScrollMagic.Scene({
 
 thirdScrollAnimation
 .to('.left-decal', 1, {height: '500px'})
-.to('.three .title', 1.5, {height: '160px'}, '-=1')
+.to('.three .title', 1.5, {height: '170px'}, '-=1')
+.to('.left-decal', 0.1, {overflow: 'visible'}, '-=1')
 .to('.three .title', 0.1, {textShadow: '-10px 10px 5px rgba(0,0,0,0.1)'})
-.to('.left-decal', 1, {overflow: 'visible', transform: 'rotate(45deg)'})
+.to('.left-decal', 1, {transform: 'rotate(45deg)'})
 .to('.left-decal .btn', 0.5, {transform: 'rotate(-45deg)'})
 .to('.three .subtitle', 1, {scale: 1}, '-=1')
 .to('.three .details', 1, {scale: 1}, '-=0.5')

@@ -540,6 +540,7 @@ body {
   font-size: 1.1rem;
   border: 2px solid #5824D4;
   cursor: pointer;
+  background-color: #f5ecec;
   z-index: 9;
 }
 
@@ -751,6 +752,35 @@ body {
   }
 }
 
+@media (max-width: 1350px) {
+  .body-wrapper .slide.three .content .decals .left-decal {
+    width: 400px;
+    left: 150px;
+  }
+  .body-wrapper .slide.three .content .decals .left-decal .left-group, .body-wrapper .slide.three .content .decals .left-decal .right-group {
+    width: 400px;
+    height: 400px;
+  }
+  .body-wrapper .slide.three .content .decals .left-decal .cube.top, .body-wrapper .slide.three .content .decals .left-decal .cube.bottom {
+    width: 400px;
+  }
+  .body-wrapper .slide.three .content .decals .left-decal .cube.left, .body-wrapper .slide.three .content .decals .left-decal .cube.right {
+    height: 400px;
+  }
+  .body-wrapper .slide.three .content .title {
+    right: 50px;
+    width: 400px;
+  }
+  .body-wrapper .slide.three .content .subtitle {
+    right: 50px;
+    width: 400px;
+  }
+  .body-wrapper .slide.three .content .details {
+    right: 50px;
+    width: 400px;
+  }
+}
+
 @media (max-width: 1250px) {
   .body-wrapper .slide.two .content .services {
     width: 900px;
@@ -775,6 +805,35 @@ body {
   }
   .body-wrapper .slide.two .content .services .service .service-desc {
     padding: 0px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .body-wrapper .slide.three .content .decals .left-decal {
+    width: 400px;
+    left: 150px;
+  }
+  .body-wrapper .slide.three .content .decals .left-decal .left-group, .body-wrapper .slide.three .content .decals .left-decal .right-group {
+    width: 400px;
+    height: 400px;
+  }
+  .body-wrapper .slide.three .content .decals .left-decal .cube.top, .body-wrapper .slide.three .content .decals .left-decal .cube.bottom {
+    width: 400px;
+  }
+  .body-wrapper .slide.three .content .decals .left-decal .cube.left, .body-wrapper .slide.three .content .decals .left-decal .cube.right {
+    height: 400px;
+  }
+  .body-wrapper .slide.three .content .title {
+    right: 50px;
+    width: 400px;
+  }
+  .body-wrapper .slide.three .content .subtitle {
+    right: 50px;
+    width: 400px;
+  }
+  .body-wrapper .slide.three .content .details {
+    right: 50px;
+    width: 400px;
   }
 }
 
