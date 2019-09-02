@@ -806,7 +806,7 @@ body {
     width: 300px;
     padding: 20px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 120px;
     float: none;
   }
   .body-wrapper .slide.two .content .services .service .shadows .title-decal.bottom, .body-wrapper .slide.two .content .services .service .shadows .title-decal.top {
@@ -841,9 +841,6 @@ body {
 }
 
 @media (max-width: 650px) {
-  .body-wrapper .slide.two .content .title {
-    margin-top: 80px;
-  }
   .body-wrapper .slide.two .content .title h1 {
     width: 100%;
     font-size: 3.5rem;
@@ -892,6 +889,7 @@ body {
   }
   .body-wrapper .slide.two .content .services .service .service-title {
     font-size: 1.5rem;
+    top: -60px;
   }
   .body-wrapper .slide.two .content .services .service .service-desc {
     padding: 0px;
@@ -925,22 +923,33 @@ body {
 }
 
 @media (max-width: 400px) {
-  .body-wrapper .slide.two .content .title h1 {
-    font-size: 3rem;
+  .body-wrapper .slide.two .content .services .service {
+    width: 250px;
+  }
+  .body-wrapper .slide.two .content .services .service .shadows .title-decal {
+    -webkit-box-shadow: -25px 25px 5px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: -25px 25px 5px 0px rgba(0, 0, 0, 0.1);
   }
   .body-wrapper .slide.two .content .services .service .shadows .title-decal.bottom, .body-wrapper .slide.two .content .services .service .shadows .title-decal.top {
-    height: 10px;
-  }
-  .body-wrapper .slide.two .content .services .service .shadows .title-decal.left, .body-wrapper .slide.two .content .services .service .shadows .title-decal.right {
-    width: 10px;
-    height: 330px;
-    top: 10px;
+    width: 250px;
   }
   .body-wrapper .slide.two .content .services .service .service-title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .body-wrapper .slide.two .content .services .service {
+    width: 200px;
+  }
+  .body-wrapper .slide.two .content .services .service .shadows .title-decal.bottom, .body-wrapper .slide.two .content .services .service .shadows .title-decal.top {
+    width: 200px;
+  }
+  .body-wrapper .slide.two .content .services .service .service-title {
+    font-size: 1.3rem;
   }
   .body-wrapper .slide.two .content .services .service .service-desc {
-    padding: 0px;
+    font-size: 0.9rem;
   }
 }
 
