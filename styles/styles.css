@@ -779,29 +779,35 @@ body {
 }
 
 @media (max-width: 950px) {
+  .body-wrapper .slide.two {
+    height: 200vh;
+  }
+  .body-wrapper .slide.two .content {
+    height: 200vh;
+  }
+  .body-wrapper .slide.two .content .decals {
+    height: 200vh;
+  }
   .body-wrapper .slide.two .content .services {
-    width: 900px;
-    height: 350px;
+    width: 100%;
+    bottom: unset;
+    top: 250px;
   }
   .body-wrapper .slide.two .content .services .service {
-    width: 250px;
-    margin: 0 25px;
+    width: 300px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+    float: none;
   }
   .body-wrapper .slide.two .content .services .service .shadows .title-decal.bottom, .body-wrapper .slide.two .content .services .service .shadows .title-decal.top {
-    width: 250px;
-    height: 15px;
-  }
-  .body-wrapper .slide.two .content .services .service .shadows .title-decal.left, .body-wrapper .slide.two .content .services .service .shadows .title-decal.right {
-    width: 15px;
-    height: 320px;
-    top: 15px;
+    width: 300px;
   }
   .body-wrapper .slide.two .content .services .service .service-title {
-    font-size: 1.8rem;
-    left: -25px;
+    font-size: 2rem;
   }
   .body-wrapper .slide.two .content .services .service .service-desc {
-    padding: 0px;
+    padding: 0 5px;
   }
 }
 
@@ -822,6 +828,47 @@ body {
     width: 450px;
     position: absolute;
     font-size: 8.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .body-wrapper .slide.two {
+    height: 200vh;
+  }
+  .body-wrapper .slide.two .content {
+    height: 200vh;
+  }
+  .body-wrapper .slide.two .content .decals {
+    height: 200vh;
+  }
+  .body-wrapper .slide.two .content .decals h1 {
+    font-size: 20rem;
+  }
+  .body-wrapper .slide.two .content .title h1 {
+    width: 500px;
+    height: 150px;
+    font-size: 4rem;
+  }
+  .body-wrapper .slide.two .content .services {
+    width: 100%;
+    bottom: unset;
+    top: 250px;
+  }
+  .body-wrapper .slide.two .content .services .service {
+    width: 300px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+    float: none;
+  }
+  .body-wrapper .slide.two .content .services .service .shadows .title-decal.bottom, .body-wrapper .slide.two .content .services .service .shadows .title-decal.top {
+    width: 300px;
+  }
+  .body-wrapper .slide.two .content .services .service .service-title {
+    font-size: 2rem;
+  }
+  .body-wrapper .slide.two .content .services .service .service-desc {
+    padding: 0 5px;
   }
 }
 
