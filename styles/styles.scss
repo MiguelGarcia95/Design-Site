@@ -559,7 +559,7 @@ body {
           .decals {
             .left-decal {
               width: 350px;
-              left: 100px;
+              left: 50px;
               .btn {
                 width: 150px;
                 bottom: 150px;
@@ -569,6 +569,7 @@ body {
                 width: 350px; height: 350px;
               }
               .cube {
+                box-shadow: -25px 25px 15px 0px rgba(0,0,0,0.2);
                 &.top, &.bottom {width: 350px;}
                 &.left, &.right {height: 350px;}
               }
@@ -585,75 +586,6 @@ body {
     }
   }
 }
-
-@media(max-width: 1000px) {
-  .body-wrapper {
-    .slide {
-      &.three {
-        .content {
-          .decals {
-            .left-decal {
-              width: 350px;
-              left: 100px;
-              // top: 0; bottom: 0;
-              .btn {
-                width: 150px;
-                // height: 50px;
-                // left: 0; right: 0;
-                // top: 0; bottom: 0;
-                bottom: 150px;
-                // line-height: 50px;
-                font-size: 1rem;
-
-              }
-              .left-group, .right-group {
-                width: 350px;
-                height: 350px;
-              }
-              .cube {
-                box-shadow: -50px 50px 15px 0px rgba(0,0,0,0.2);
-                &.top, &.bottom {
-                  width: 350px;
-                  // height: 10px;
-                }
-                &.left, &.right {
-                  height: 350px;
-                  // width: 10px;
-                }
-              }
-            }      
-          }
-          .title {
-            // right: 50px;
-            width: 350px;
-            // top: 150px;
-            h1 {
-              margin-left: 20px;
-              // line-height: 80px;
-              font-size: 2.5rem;
-            }
-          }
-          .subtitle {
-            // right: 50px;
-            width: 350px;
-            // height: 40px;
-            // top: 350px;
-            h2 {
-              // line-height: 40px;
-              // font-size: 1.1rem;
-            }
-          }
-          .details {
-            // right: 50px;
-            width: 350px;
-            // top: 450px;
-          }
-        }
-      }
-    }
-  }
-}
-
 
 @media(max-width: 950px) {
   .body-wrapper {
@@ -692,6 +624,78 @@ body {
               .service-title {font-size: 2rem;}
               .service-desc {padding: 0 5px;}
             }
+          }
+        }
+      }
+      &.three {
+        height: 150vh;
+        .content {
+          height: 150vh;
+          .decals {
+            top: 400px;
+            .left-decal {
+              width: 350px;
+              top: 250px; bottom: unset;
+              left: 0; right: 0;
+              margin: auto;
+              .btn {
+                // width: 150px;
+                // height: 50px;
+                // left: 0; right: 0;
+                // top: 0; bottom: 0;
+                // bottom: 150px;
+                // line-height: 50px;
+                // font-size: 1rem;
+              }
+              .left-group, .right-group {
+                // width: 350px;
+                // height: 350px;
+              }
+              .cube {
+                // box-shadow: -25px 25px 15px 0px rgba(0,0,0,0.2);
+                &.top, &.bottom {
+                  // width: 350px;
+                  // height: 10px;
+                }
+                &.left, &.right {
+                  // height: 350px;
+                  // width: 10px;
+                }
+              }
+            }      
+          }
+          .title {
+            width: 50%;
+            // left: 20px;
+            left: 0; right: 0;
+            margin: auto;
+            top: 100px;
+            h1 {
+              text-align: center;
+              margin-left: 0px;
+              // line-height: 80px;
+              // font-size: 2.5rem;
+            }
+          }
+          .subtitle {
+            width: 50%;
+            left: 0; right: 0;
+            margin: auto;
+
+            // height: 40px;
+            top: 280px;
+            h2 {
+              text-align: center;
+              // line-height: 40px;
+              // font-size: 1.1rem;
+            }
+          }
+          .details {
+            right: 0; left: 0;
+            margin: auto;
+            width: 50%;
+            top: 350px;
+            text-align: center;
           }
         }
       }
