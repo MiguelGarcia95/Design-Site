@@ -534,6 +534,13 @@ body {
   bottom: 0;
   margin: auto;
   text-align: center;
+  line-height: 50px;
+  color: #5824D4;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border: 2px solid #5824D4;
+  cursor: pointer;
+  z-index: 9;
 }
 
 .body-wrapper .slide.three .content .decals .left-decal .left-group, .body-wrapper .slide.three .content .decals .left-decal .right-group {
