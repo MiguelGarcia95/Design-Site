@@ -497,6 +497,7 @@ body {
             .left-decal {
               width: 400px;
               left: 150px;
+              .btn {bottom: 100px;}
               .left-group, .right-group {width: 400px; height: 400px;}
               .cube {
                 &.top, &.bottom {width: 400px;}
@@ -557,48 +558,84 @@ body {
         .content {
           .decals {
             .left-decal {
-              width: 400px;
-              left: 150px;
+              width: 350px;
+              left: 100px;
+              .btn {
+                width: 150px;
+                bottom: 150px;
+                font-size: 1rem;
+              }
+              .left-group, .right-group {
+                width: 350px; height: 350px;
+              }
+              .cube {
+                &.top, &.bottom {width: 350px;}
+                &.left, &.right {height: 350px;}
+              }
+            }      
+          }
+          .title {
+            width: 350px;
+            h1 {font-size: 2.5rem;}
+          }
+          .subtitle {width: 350px;}
+          .details {width: 350px;}
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 1000px) {
+  .body-wrapper {
+    .slide {
+      &.three {
+        .content {
+          .decals {
+            .left-decal {
+              width: 350px;
+              left: 100px;
               // top: 0; bottom: 0;
               .btn {
-                // width: 200px;
+                width: 150px;
                 // height: 50px;
                 // left: 0; right: 0;
                 // top: 0; bottom: 0;
+                bottom: 150px;
                 // line-height: 50px;
-                // font-size: 1.1rem;
+                font-size: 1rem;
 
               }
               .left-group, .right-group {
-                width: 400px;
-                height: 400px;
+                width: 350px;
+                height: 350px;
               }
               .cube {
-                // box-shadow: -50px 50px 15px 0px rgba(0,0,0,0.2);
+                box-shadow: -50px 50px 15px 0px rgba(0,0,0,0.2);
                 &.top, &.bottom {
-                  width: 400px;
+                  width: 350px;
                   // height: 10px;
                 }
                 &.left, &.right {
-                  height: 400px;
+                  height: 350px;
                   // width: 10px;
                 }
               }
             }      
           }
           .title {
-            right: 50px;
-            width: 400px;
+            // right: 50px;
+            width: 350px;
             // top: 150px;
             h1 {
-              // margin-left: 20px;
+              margin-left: 20px;
               // line-height: 80px;
-              // font-size: 3rem;
+              font-size: 2.5rem;
             }
           }
           .subtitle {
-            right: 50px;
-            width: 400px;
+            // right: 50px;
+            width: 350px;
             // height: 40px;
             // top: 350px;
             h2 {
@@ -607,8 +644,8 @@ body {
             }
           }
           .details {
-            right: 50px;
-            width: 400px;
+            // right: 50px;
+            width: 350px;
             // top: 450px;
           }
         }
@@ -616,6 +653,7 @@ body {
     }
   }
 }
+
 
 @media(max-width: 950px) {
   .body-wrapper {

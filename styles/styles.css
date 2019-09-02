@@ -757,6 +757,9 @@ body {
     width: 400px;
     left: 150px;
   }
+  .body-wrapper .slide.three .content .decals .left-decal .btn {
+    bottom: 100px;
+  }
   .body-wrapper .slide.three .content .decals .left-decal .left-group, .body-wrapper .slide.three .content .decals .left-decal .right-group {
     width: 400px;
     height: 400px;
@@ -810,30 +813,74 @@ body {
 
 @media (max-width: 1150px) {
   .body-wrapper .slide.three .content .decals .left-decal {
-    width: 400px;
-    left: 150px;
+    width: 350px;
+    left: 100px;
+  }
+  .body-wrapper .slide.three .content .decals .left-decal .btn {
+    width: 150px;
+    bottom: 150px;
+    font-size: 1rem;
   }
   .body-wrapper .slide.three .content .decals .left-decal .left-group, .body-wrapper .slide.three .content .decals .left-decal .right-group {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
   }
   .body-wrapper .slide.three .content .decals .left-decal .cube.top, .body-wrapper .slide.three .content .decals .left-decal .cube.bottom {
-    width: 400px;
+    width: 350px;
   }
   .body-wrapper .slide.three .content .decals .left-decal .cube.left, .body-wrapper .slide.three .content .decals .left-decal .cube.right {
-    height: 400px;
+    height: 350px;
   }
   .body-wrapper .slide.three .content .title {
-    right: 50px;
-    width: 400px;
+    width: 350px;
+  }
+  .body-wrapper .slide.three .content .title h1 {
+    font-size: 2.5rem;
   }
   .body-wrapper .slide.three .content .subtitle {
-    right: 50px;
-    width: 400px;
+    width: 350px;
   }
   .body-wrapper .slide.three .content .details {
-    right: 50px;
-    width: 400px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .body-wrapper .slide.three .content .decals .left-decal {
+    width: 350px;
+    left: 100px;
+  }
+  .body-wrapper .slide.three .content .decals .left-decal .btn {
+    width: 150px;
+    bottom: 150px;
+    font-size: 1rem;
+  }
+  .body-wrapper .slide.three .content .decals .left-decal .left-group, .body-wrapper .slide.three .content .decals .left-decal .right-group {
+    width: 350px;
+    height: 350px;
+  }
+  .body-wrapper .slide.three .content .decals .left-decal .cube {
+    -webkit-box-shadow: -50px 50px 15px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: -50px 50px 15px 0px rgba(0, 0, 0, 0.2);
+  }
+  .body-wrapper .slide.three .content .decals .left-decal .cube.top, .body-wrapper .slide.three .content .decals .left-decal .cube.bottom {
+    width: 350px;
+  }
+  .body-wrapper .slide.three .content .decals .left-decal .cube.left, .body-wrapper .slide.three .content .decals .left-decal .cube.right {
+    height: 350px;
+  }
+  .body-wrapper .slide.three .content .title {
+    width: 350px;
+  }
+  .body-wrapper .slide.three .content .title h1 {
+    margin-left: 20px;
+    font-size: 2.5rem;
+  }
+  .body-wrapper .slide.three .content .subtitle {
+    width: 350px;
+  }
+  .body-wrapper .slide.three .content .details {
+    width: 350px;
   }
 }
 
