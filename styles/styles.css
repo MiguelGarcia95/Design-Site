@@ -879,16 +879,22 @@ body {
 }
 
 @media (max-width: 500px) {
-  .body-wrapper .slide.two .content .title {
-    margin-top: 80px;
-  }
   .body-wrapper .slide.two .content .title h1 {
-    width: 100%;
-    font-size: 3.5rem;
-    text-align: center;
+    font-size: 3rem;
+  }
+  .body-wrapper .slide.two .content .services .service .shadows .title-decal.bottom, .body-wrapper .slide.two .content .services .service .shadows .title-decal.top {
+    height: 10px;
+  }
+  .body-wrapper .slide.two .content .services .service .shadows .title-decal.left, .body-wrapper .slide.two .content .services .service .shadows .title-decal.right {
+    width: 10px;
+    height: 330px;
+    top: 10px;
   }
   .body-wrapper .slide.two .content .services .service .service-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+  }
+  .body-wrapper .slide.two .content .services .service .service-desc {
+    padding: 0px;
   }
 }
 
@@ -915,6 +921,26 @@ body {
     height: 180px;
     line-height: 180px;
     font-size: 5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .body-wrapper .slide.two .content .title h1 {
+    font-size: 3rem;
+  }
+  .body-wrapper .slide.two .content .services .service .shadows .title-decal.bottom, .body-wrapper .slide.two .content .services .service .shadows .title-decal.top {
+    height: 10px;
+  }
+  .body-wrapper .slide.two .content .services .service .shadows .title-decal.left, .body-wrapper .slide.two .content .services .service .shadows .title-decal.right {
+    width: 10px;
+    height: 330px;
+    top: 10px;
+  }
+  .body-wrapper .slide.two .content .services .service .service-title {
+    font-size: 1.5rem;
+  }
+  .body-wrapper .slide.two .content .services .service .service-desc {
+    padding: 0px;
   }
 }
 

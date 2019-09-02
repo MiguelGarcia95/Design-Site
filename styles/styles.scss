@@ -656,72 +656,24 @@ body {
   .body-wrapper {
     .slide {
       &.two {
-        // height: 200vh;
         .content {
-          // height: 200vh;
-          .decals {
-            // height: 200vh;
-            h1 {
-              // font-size: 20rem;
-
-              // height: 450px;
-              // line-height: 450px;
-              // width: 1000px;
-              // right: -1000px;
-            }
-          }
           .title {
-            margin-top: 80px;
-            h1 {
-              width: 100%;
-              // height: 150px;
-              font-size: 3.5rem;
-              text-align: center;
-              // text-shadow: -10px 10px 5px rgba(0,0,0,0.1);
-            }
+            h1 {font-size: 3rem;}
           }
           .services {
-            // width: 100%;
-            // bottom: unset;
-            // top: 250px;
-            // height: 350px;
             .service {
-              // width: 300px;
-              // height: 100%;
-              // float: left;
-
-              // padding: 20px;
-              // margin: auto;
-              // margin-top: 100px;
-              // float: none;
               .shadows {
                 .title-decal {
-                  // box-shadow: -50px 50px 5px 0px rgba(0,0,0,0.1);
-                  &.bottom, &.top {
-                    // width: 300px;
-                    // height: 15px;
-                    // left: 0;
-                  }
+                  &.bottom, &.top {height: 10px;}
                   &.left, &.right {
-                    // width: 15px;
-                    // height: 320px;
-                    // top: 15px;
+                    width: 10px;
+                    height: 330px;
+                    top: 10px;
                   }
-                  // &.top {top: 0;}
-                  // &.bottom {bottom: 0;}
-                  // &.right { right: 0; }
-                  // &.left {left: 0;}
                 }
               }
-              .service-title {
-                font-size: 1.8rem;
-                // left: -25px;
-                // top: -80px;
-              }
-              .service-desc {
-                // font-size: 1rem;
-                // padding: 0 5px;
-              }
+              .service-title {font-size: 1.5rem;}
+              .service-desc {padding: 0px;}
             }
           }
         }
@@ -754,6 +706,84 @@ body {
               height: 180px;
               line-height: 180px;
               font-size: 5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 400px) {
+  .body-wrapper {
+    .slide {
+      &.two {
+        // height: 200vh;
+        .content {
+          // height: 200vh;
+          .decals {
+            // height: 200vh;
+            h1 {
+              // font-size: 20rem;
+
+              // height: 450px;
+              // line-height: 450px;
+              // width: 1000px;
+              // right: -1000px;
+            }
+          }
+          .title {
+            // margin-top: 80px;
+            h1 {
+              // width: 100%;
+              // height: 150px;
+              font-size: 3rem;
+              // text-align: center;
+              // text-shadow: -10px 10px 5px rgba(0,0,0,0.1);
+            }
+          }
+          .services {
+            // width: 100%;
+            // bottom: unset;
+            // top: 250px;
+            // height: 350px;
+            .service {
+              // width: 300px;
+              // height: 100%;
+              // float: left;
+
+              // padding: 20px;
+              // margin: auto;
+              // margin-top: 100px;
+              // float: none;
+              .shadows {
+                .title-decal {
+                  // box-shadow: -50px 50px 5px 0px rgba(0,0,0,0.1);
+                  &.bottom, &.top {
+                    // width: 300px;
+                    height: 10px;
+                    // left: 0;
+                  }
+                  &.left, &.right {
+                    width: 10px;
+                    height: 330px;
+                    top: 10px;
+                  }
+                  // &.top {top: 0;}
+                  // &.bottom {bottom: 0;}
+                  // &.right { right: 0; }
+                  // &.left {left: 0;}
+                }
+              }
+              .service-title {
+                font-size: 1.5rem;
+                // left: -25px;
+                // top: -80px;
+              }
+              .service-desc {
+                // font-size: 1rem;
+                padding: 0px;
+              }
             }
           }
         }
