@@ -763,6 +763,15 @@ body {
   .body-wrapper {
     .slide {
       &.one {.content {.title {h1 {font-size: 4.5rem;}}}}
+      &.two {
+        .content {
+          .services {
+            .service {
+              .service-title {left: 0; right: 0; text-align: center;}
+            }
+          }
+        }
+      }
     }
   }
 }
