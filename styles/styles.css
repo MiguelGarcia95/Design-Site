@@ -787,6 +787,15 @@ body {
   }
   .body-wrapper .slide.two .content .decals {
     height: 200vh;
+    position: fixed;
+  }
+  .body-wrapper .slide.two .content .decals h1 {
+    font-size: 20rem;
+  }
+  .body-wrapper .slide.two .content .title h1 {
+    width: 500px;
+    height: 150px;
+    font-size: 4rem;
   }
   .body-wrapper .slide.two .content .services {
     width: 100%;
@@ -831,44 +840,17 @@ body {
   }
 }
 
-@media (max-width: 700px) {
-  .body-wrapper .slide.two {
-    height: 200vh;
-  }
-  .body-wrapper .slide.two .content {
-    height: 200vh;
-  }
-  .body-wrapper .slide.two .content .decals {
-    height: 200vh;
-  }
-  .body-wrapper .slide.two .content .decals h1 {
-    font-size: 20rem;
+@media (max-width: 650px) {
+  .body-wrapper .slide.two .content .title {
+    margin-top: 80px;
   }
   .body-wrapper .slide.two .content .title h1 {
-    width: 500px;
-    height: 150px;
-    font-size: 4rem;
-  }
-  .body-wrapper .slide.two .content .services {
     width: 100%;
-    bottom: unset;
-    top: 250px;
-  }
-  .body-wrapper .slide.two .content .services .service {
-    width: 300px;
-    padding: 20px;
-    margin: auto;
-    margin-top: 100px;
-    float: none;
-  }
-  .body-wrapper .slide.two .content .services .service .shadows .title-decal.bottom, .body-wrapper .slide.two .content .services .service .shadows .title-decal.top {
-    width: 300px;
+    font-size: 3.5rem;
+    text-align: center;
   }
   .body-wrapper .slide.two .content .services .service .service-title {
-    font-size: 2rem;
-  }
-  .body-wrapper .slide.two .content .services .service .service-desc {
-    padding: 0 5px;
+    font-size: 1.8rem;
   }
 }
 
@@ -893,6 +875,20 @@ body {
     height: 200px;
     line-height: 200px;
     font-size: 7rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .body-wrapper .slide.two .content .title {
+    margin-top: 80px;
+  }
+  .body-wrapper .slide.two .content .title h1 {
+    width: 100%;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  .body-wrapper .slide.two .content .services .service .service-title {
+    font-size: 1.8rem;
   }
 }
 
