@@ -51,38 +51,69 @@ body {
 // #DF93FC
 // #9AC3FA
 
+.title {
+  // @include centerAbs(500px, 250px);
+  // color: white;
+  // .title-decal {
+  //   background-color: white;
+  //   position: absolute;
+  //   box-shadow: -50px 50px 5px 0px rgba(0,0,0,0.2);
+  // }
+  // .top, .bottom {
+  //   width: 500px; height: 20px;
+  // }
+  // .left, .right {
+  //   width: 20px; height: 210px;
+  //   top: 20px;
+  // }
+  // .top {top: 0;}
+  // .bottom {bottom: 0;}
+  // .left {left: 0;}
+  // .right {right: 0;}
+  // h1 {
+  //   width: 500px;
+  //   height: 250px;
+  //   line-height: 250px;
+  //   text-align: center;
+  //   font-size: 10rem;
+  // }
+}
+
+// navbar
+.navbar {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: 50px;
+  .logo {
+    margin-top: 20px;
+    position: absolute;
+    width: 150px;
+    text-align: center;
+    right: 20px;
+    p {
+      color: white;
+      font-size: 2rem;
+      line-height: 50px;
+    }
+    div {
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      background-color: white;
+      margin: auto;
+      &.tr {@include logoDecal(top right, -45deg, unset, 0, 0, unset);}
+      &.tl {@include logoDecal(top left, 45deg, 0, unset, 0, unset);}
+      &.br {@include logoDecal(bottom right, 45deg, unset, 0, unset, 0);}
+      &.bl {@include logoDecal(bottom left, -45deg, 0, unset, unset, 0);}
+    }
+  }
+}
+
 .body-wrapper {
   width: 100%;
   height: 400vh;
-  .navbar {
-    position: fixed;
-    z-index: 99;
-    width: 100%;
-    height: 50px;
-    .logo {
-      margin-top: 20px;
-      position: absolute;
-      width: 150px;
-      text-align: center;
-      right: 20px;
-      p {
-        color: white;
-        font-size: 2rem;
-        line-height: 50px;
-      }
-      div {
-        position: absolute;
-        width: 30px;
-        height: 3px;
-        background-color: white;
-        margin: auto;
-        &.tr {@include logoDecal(top right, -45deg, unset, 0, 0, unset);}
-        &.tl {@include logoDecal(top left, 45deg, 0, unset, 0, unset);}
-        &.br {@include logoDecal(bottom right, 45deg, unset, 0, unset, 0);}
-        &.bl {@include logoDecal(bottom left, -45deg, 0, unset, unset, 0);}
-      }
-    }
-  }
+
   .slide {
     width: 100vw;
     height: 100vh;
@@ -142,7 +173,6 @@ body {
       
       .content {
         @include centerAbs(100vw, 100vh);
-        // .subtitle {}
         .title {
           @include centerAbs(500px, 250px);
           color: white;
@@ -435,24 +465,92 @@ body {
         }
       }
     }
-
-    
-
   }
 }
-
 
 ::-webkit-scrollbar {
   display: none;
 }
 
-// .block {
-//   width: 300px; height: 200px;
-//   position: absolute;
-//   bottom: 0; right: 0; left: 0;
-//   margin: auto;
-//   border-radius: 100% 100% 100% 100% / 100% 100% 100% 100%;
-//   background-color: #4f3269;
-//   transition: 0.5s;
-//   overflow: hidden;
-// }
+
+@media(max-width: 800px) {
+  .body-wrapper {
+    .slide {
+      &.one {
+        // .decals {
+        //   .shadows {
+        //     .shadow-01 {
+        //       @include decal-shadow(200px, 200px, 15px, 5px);
+        //       left: 50px; top: 50px;
+        //     }
+        //     .shadow-02 {
+        //       @include decal-shadow(150px, 150px, 15px, 5px);
+        //       left: 250px; top: 250px;
+        //     }
+        //     .shadow-03 {
+        //       @include decal-shadow(200px, 200px, 15px, 5px);
+        //       left: 50px; top: 400px;
+        //     }
+        //     .shadow-04 {
+        //       @include decal-shadow(300px, 300px, 15px, 5px);
+        //       left: 550px; top: 50px;
+        //     }
+        //     .shadow-05 {
+        //       @include decal-shadow(250px, 250px, 15px, 5px);
+        //       left: 1050px; top: 150px;
+        //     }
+        //     .shadow-06 {
+        //       @include decal-shadow(250px, 250px, 15px, 5px);
+        //       left: 1300px; top: 400px;
+        //     }
+        //     .shadow-07 {
+        //       @include decal-shadow(250px, 250px, 15px, 5px);
+        //       left: 1550px; top: 150px;
+        //     }
+        //     .shadow-08 {
+        //       @include decal-shadow(250px, 250px, 15px, 5px);
+        //       left: 600px; top: 650px;
+        //     }
+        //     .shadow-09 {
+        //       @include decal-shadow(150px, 150px, 15px, 5px);
+        //       left: 850px; top: 900px;
+        //     }
+        //     .shadow-10 {
+        //       @include decal-shadow(150px, 150px, 15px, 5px);
+        //       left: 1550px; top: 900px;
+        //     }
+        //     .shadow-11 {
+        //       @include decal-shadow(150px, 150px, 15px, 5px);
+        //       left: 1650px; top: 600px;
+        //     }
+        //   }
+        // }
+        
+        .content {
+          .title {
+            .title-decal {
+              // box-shadow: -50px 50px 5px 0px rgba(0,0,0,0.2);
+            }
+            .top, .bottom {
+              // width: 500px; height: 20px;
+            }
+            .left, .right {
+              // width: 20px; height: 210px;
+              // top: 20px;
+            }
+            // .top {top: 0;}
+            // .bottom {bottom: 0;}
+            // .left {left: 0;}
+            // .right {right: 0;}
+            h1 {
+              // width: 500px;
+              // height: 250px;
+              // line-height: 250px;
+              // font-size: 10rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

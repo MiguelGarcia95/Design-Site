@@ -54,19 +54,14 @@ body {
   -ms-overflow-style: none;
 }
 
-.body-wrapper {
-  width: 100%;
-  height: 400vh;
-}
-
-.body-wrapper .navbar {
+.navbar {
   position: fixed;
   z-index: 99;
   width: 100%;
   height: 50px;
 }
 
-.body-wrapper .navbar .logo {
+.navbar .logo {
   margin-top: 20px;
   position: absolute;
   width: 150px;
@@ -74,13 +69,13 @@ body {
   right: 20px;
 }
 
-.body-wrapper .navbar .logo p {
+.navbar .logo p {
   color: white;
   font-size: 2rem;
   line-height: 50px;
 }
 
-.body-wrapper .navbar .logo div {
+.navbar .logo div {
   position: absolute;
   width: 30px;
   height: 3px;
@@ -88,7 +83,7 @@ body {
   margin: auto;
 }
 
-.body-wrapper .navbar .logo div.tr {
+.navbar .logo div.tr {
   -webkit-transform-origin: top right;
           transform-origin: top right;
   -webkit-transform: rotate(-45deg);
@@ -99,7 +94,7 @@ body {
   right: 0;
 }
 
-.body-wrapper .navbar .logo div.tl {
+.navbar .logo div.tl {
   -webkit-transform-origin: top left;
           transform-origin: top left;
   -webkit-transform: rotate(45deg);
@@ -110,7 +105,7 @@ body {
   right: unset;
 }
 
-.body-wrapper .navbar .logo div.br {
+.navbar .logo div.br {
   -webkit-transform-origin: bottom right;
           transform-origin: bottom right;
   -webkit-transform: rotate(45deg);
@@ -121,7 +116,7 @@ body {
   right: 0;
 }
 
-.body-wrapper .navbar .logo div.bl {
+.navbar .logo div.bl {
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
   -webkit-transform: rotate(-45deg);
@@ -130,6 +125,11 @@ body {
   bottom: 0;
   left: 0;
   right: unset;
+}
+
+.body-wrapper {
+  width: 100%;
+  height: 400vh;
 }
 
 .body-wrapper .slide {
