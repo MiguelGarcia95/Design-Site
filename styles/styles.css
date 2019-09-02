@@ -742,6 +742,69 @@ body {
   display: none;
 }
 
+@media (max-width: 1500px) {
+  .body-wrapper .slide.two .content .services {
+    width: 1200px;
+  }
+  .body-wrapper .slide.two .content .services .service {
+    margin: 0 50px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .body-wrapper .slide.two .content .services {
+    width: 900px;
+    height: 350px;
+  }
+  .body-wrapper .slide.two .content .services .service {
+    width: 250px;
+    margin: 0 25px;
+  }
+  .body-wrapper .slide.two .content .services .service .shadows .title-decal.bottom, .body-wrapper .slide.two .content .services .service .shadows .title-decal.top {
+    width: 250px;
+    height: 15px;
+  }
+  .body-wrapper .slide.two .content .services .service .shadows .title-decal.left, .body-wrapper .slide.two .content .services .service .shadows .title-decal.right {
+    width: 15px;
+    height: 320px;
+    top: 15px;
+  }
+  .body-wrapper .slide.two .content .services .service .service-title {
+    font-size: 1.8rem;
+    left: -25px;
+  }
+  .body-wrapper .slide.two .content .services .service .service-desc {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 950px) {
+  .body-wrapper .slide.two .content .services {
+    width: 900px;
+    height: 350px;
+  }
+  .body-wrapper .slide.two .content .services .service {
+    width: 250px;
+    margin: 0 25px;
+  }
+  .body-wrapper .slide.two .content .services .service .shadows .title-decal.bottom, .body-wrapper .slide.two .content .services .service .shadows .title-decal.top {
+    width: 250px;
+    height: 15px;
+  }
+  .body-wrapper .slide.two .content .services .service .shadows .title-decal.left, .body-wrapper .slide.two .content .services .service .shadows .title-decal.right {
+    width: 15px;
+    height: 320px;
+    top: 15px;
+  }
+  .body-wrapper .slide.two .content .services .service .service-title {
+    font-size: 1.8rem;
+    left: -25px;
+  }
+  .body-wrapper .slide.two .content .services .service .service-desc {
+    padding: 0px;
+  }
+}
+
 @media (max-width: 800px) {
   .body-wrapper .slide.one .content .title {
     width: 450px;
