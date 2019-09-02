@@ -638,6 +638,78 @@ body {
               top: 250px; bottom: unset;
               left: 0; right: 0;
               margin: auto;
+            }      
+          }
+          .title {
+            width: 50%;
+            left: 0; right: 0;
+            margin: auto;
+            top: 100px;
+            h1 {
+              text-align: center;
+              margin-left: 0px;
+            }
+          }
+          .subtitle {
+            width: 50%;
+            left: 0; right: 0;
+            margin: auto;
+            top: 280px;
+            h2 {text-align: center;}
+          }
+          .details {
+            right: 0; left: 0;
+            margin: auto;
+            width: 60%;
+            top: 350px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 800px) {
+  .body-wrapper {
+    .slide {
+      &.one {
+        .content {
+          .title {
+            width: 450px;
+            .top, .bottom {
+              width: 450px; height: 15px;
+            }
+            .left, .right {
+              width: 15px; height: 220px;
+              top: 15px;
+            }
+            h1 {
+              width: 450px;
+              position: absolute;
+              font-size: 8.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 750px) {
+  .body-wrapper {
+    .slide {
+      &.three {
+        height: 150vh;
+        .content {
+          height: 150vh;
+          .decals {
+            top: 400px;
+            .left-decal {
+              width: 350px;
+              top: 250px; bottom: unset;
+              left: 0; right: 0;
+              margin: auto;
               .btn {
                 // width: 150px;
                 // height: 50px;
@@ -693,7 +765,7 @@ body {
           .details {
             right: 0; left: 0;
             margin: auto;
-            width: 50%;
+            width: 60%;
             top: 350px;
             text-align: center;
           }
@@ -702,33 +774,6 @@ body {
     }
   }
 }
-
-@media(max-width: 800px) {
-  .body-wrapper {
-    .slide {
-      &.one {
-        .content {
-          .title {
-            width: 450px;
-            .top, .bottom {
-              width: 450px; height: 15px;
-            }
-            .left, .right {
-              width: 15px; height: 220px;
-              top: 15px;
-            }
-            h1 {
-              width: 450px;
-              position: absolute;
-              font-size: 8.5rem;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
 
 @media(max-width: 650px) {
   .body-wrapper {
