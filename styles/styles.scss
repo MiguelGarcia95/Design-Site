@@ -772,6 +772,7 @@ body {
       &.two {
         .content {
           .title {
+            top: 100px;
             h1 {
               width: 100%;
               font-size: 3.5rem;
@@ -881,7 +882,7 @@ body {
                   &.bottom, &.top {height: 10px;}
                   &.left, &.right {
                     width: 10px;
-                    height: 330px;
+                    height: 280px;
                     top: 10px;
                   }
                 }

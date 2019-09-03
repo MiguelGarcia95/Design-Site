@@ -1055,6 +1055,9 @@ body {
 }
 
 @media (max-width: 650px) {
+  .body-wrapper .slide.two .content .title {
+    top: 100px;
+  }
   .body-wrapper .slide.two .content .title h1 {
     width: 100%;
     font-size: 3.5rem;
@@ -1149,7 +1152,7 @@ body {
   }
   .body-wrapper .slide.two .content .services .service .shadows .title-decal.left, .body-wrapper .slide.two .content .services .service .shadows .title-decal.right {
     width: 10px;
-    height: 330px;
+    height: 280px;
     top: 10px;
   }
   .body-wrapper .slide.two .content .services .service .service-title {
