@@ -830,54 +830,16 @@ body {
   .body-wrapper {
     .slide {
       &.four {
-        height: 100vh;
-        min-height: 700px;
         .content {
-          height: 100vh;
-          min-height: 700px;
           .title {
-            left: 0; right: 0;
-            margin: auto;
-            width: 100%;
-            text-align: center;
-            top: 50px;
-            h1 {
-              // line-height: 80px;
-              font-size: 4rem;
-            }
+            top: 80px;
+            h1 {font-size: 3.5rem;}
           }
-          .details {
-            width: 60%;
-            left: 0; right: 0;
-            margin: auto;
-            text-align: center;
-            top: 150px;
-          }
-          .contactus {
-            top: 300px;
-            left: 0; right: 0;
-            margin: auto;
-            // right: 50px;
-            // border-radius:9% 91% 30% 70% / 14% 50% 50% 86%;
-            // &:hover {
-            //   border-radius: 51% 85% 66% 75% / 80% 86% 56% 54% ;
-            // }
-            input {
-              // width: 200px;
-              // padding: 10px;
-              // height: 30px;
-            }
-          }
+          .details { width: 80%; top: 180px;}
+          .contactus {top: 350px;}
           .footer {
-            // width: 650px;
-            // width: 100%;
-            // text-align: center;
-            // height: 100px;
-            // padding: 0 50px;
-            position: fixed;
-            p {
-              // line-height: 100px;
-            }
+            padding: 0 25px;
+            p {font-size: 0.9rem;}
           }
         }
       }
@@ -939,6 +901,15 @@ body {
               .service-title {font-size: 1.5rem; top: -60px;}
               .service-desc {padding: 0px;}
             }
+          }
+        }
+      }
+      &.four {
+        .content {
+          .details {width: 90%;}
+          .footer {
+            padding: 0px;
+            p {font-size: 0.8rem;}
           }
         }
       }
