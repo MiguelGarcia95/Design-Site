@@ -593,43 +593,7 @@ body {
     .slide {
       &.four {
         .content {
-          // .decals {}
-          .title {
-            // left: 50px;
-            // width: 450px;
-            // top: 100px;
-            h1 {
-              // line-height: 80px;
-              // font-size: 5rem;
-            }
-          }
-          .details {
-            // left: 50px;
-            // width: 450px;
-            // top: 210px;
-          }
-          .contactus {
-            // right: 0;
-            // top: 150px;
-            // right: 150px;
-            // border-radius:9% 91% 30% 70% / 14% 50% 50% 86%;
-            // &:hover {
-            //   border-radius: 51% 85% 66% 75% / 80% 86% 56% 54% ;
-            // }
-            input {
-              // width: 200px;
-              // padding: 10px;
-              // height: 30px;
-            }
-          }
-          .footer {
-            // width: 650px;
-            // height: 100px;
-            // padding: 0 50px;
-            p {
-              // line-height: 100px;
-            }
-          }
+          .contactus {right: 50px;}
         }
       }
     }
@@ -714,6 +678,46 @@ body {
             width: 60%;
             top: 350px;
             text-align: center;
+          }
+        }
+      }
+      &.four {
+        .content {
+          // .decals {}
+          .title {
+            // left: 50px;
+            // width: 450px;
+            // top: 100px;
+            h1 {
+              // line-height: 80px;
+              // font-size: 5rem;
+            }
+          }
+          .details {
+            // left: 50px;
+            // width: 450px;
+            // top: 210px;
+          }
+          .contactus {
+            // top: 150px;
+            // right: 50px;
+            // border-radius:9% 91% 30% 70% / 14% 50% 50% 86%;
+            // &:hover {
+            //   border-radius: 51% 85% 66% 75% / 80% 86% 56% 54% ;
+            // }
+            input {
+              // width: 200px;
+              // padding: 10px;
+              // height: 30px;
+            }
+          }
+          .footer {
+            // width: 650px;
+            // height: 100px;
+            // padding: 0 50px;
+            p {
+              // line-height: 100px;
+            }
           }
         }
       }

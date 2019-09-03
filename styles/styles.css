@@ -847,6 +847,12 @@ body {
   }
 }
 
+@media (max-width: 1100px) {
+  .body-wrapper .slide.four .content .contactus {
+    right: 50px;
+  }
+}
+
 @media (max-width: 950px) {
   .body-wrapper .slide.two {
     height: 200vh;
