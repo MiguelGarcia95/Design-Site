@@ -91,9 +91,10 @@ body {
     width: 100vw;
     height: 100vh;
     position: relative;
+    overflow: hidden;
+
     &.one {
       background: #5824D4;
-      overflow: hidden;
       .decals {
         @include centerAbs(100vw, 100vh);
         .shadows {

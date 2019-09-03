@@ -138,11 +138,11 @@ body {
   width: 100vw;
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 .body-wrapper .slide.one {
   background: #5824D4;
-  overflow: hidden;
 }
 
 .body-wrapper .slide.one .decals {
