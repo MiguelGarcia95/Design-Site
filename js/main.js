@@ -22,7 +22,7 @@ var sceneOne = new ScrollMagic.Scene({
 })
 .setTween(firstScrollAnimation)
 .setPin('.title')
-.addIndicators();
+// .addIndicators();
 
 secondScrollAnimation
 .to('.two .decals h1', 1.5, {right: 'unset', left: '-700px', autoAlpha: 0.02})
@@ -36,7 +36,7 @@ var sceneTwo = new ScrollMagic.Scene({
 })
 .setTween(secondScrollAnimation)
 .setPin('.two')
-.addIndicators();
+// .addIndicators();
 
 thirdScrollAnimation
 .to('.left-decal', 1, {height: '500px'})
@@ -57,7 +57,7 @@ var sceneThree = new ScrollMagic.Scene({
 })
 .setTween(thirdScrollAnimation)
 .setPin('.three')
-.addIndicators();
+// .addIndicators();
 
 fourthScrollAnimation
 .to('.four .title', 1, {height: '80px'})
@@ -73,6 +73,6 @@ var sceneFour = new ScrollMagic.Scene({
 })
 .setTween(fourthScrollAnimation)
 .setPin('.four')
-.addIndicators();
+// .addIndicators();
 
 controller.addScene([sceneOne, sceneTwo, sceneThree, sceneFour]);
