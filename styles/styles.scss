@@ -51,34 +51,6 @@ body {
 // #DF93FC
 // #9AC3FA
 
-.title {
-  // @include centerAbs(500px, 250px);
-  // color: white;
-  // .title-decal {
-  //   background-color: white;
-  //   position: absolute;
-  //   box-shadow: -50px 50px 5px 0px rgba(0,0,0,0.2);
-  // }
-  // .top, .bottom {
-  //   width: 500px; height: 20px;
-  // }
-  // .left, .right {
-  //   width: 20px; height: 210px;
-  //   top: 20px;
-  // }
-  // .top {top: 0;}
-  // .bottom {bottom: 0;}
-  // .left {left: 0;}
-  // .right {right: 0;}
-  // h1 {
-  //   width: 500px;
-  //   height: 250px;
-  //   line-height: 250px;
-  //   text-align: center;
-  //   font-size: 10rem;
-  // }
-}
-
 // navbar
 .navbar {
   position: fixed;
@@ -606,8 +578,10 @@ body {
     .slide {
       &.two {
         height: 200vh;
+        min-height: 1950px;
         .content {
           height: 200vh;
+          min-height: 1950px;
           .decals {
             height: 200vh;
             position: fixed;
@@ -643,10 +617,13 @@ body {
       }
       &.three {
         height: 150vh;
+        min-height: 1400px;
         .content {
           height: 150vh;
+          min-height: 1400px;
           .decals {
-            top: 400px;
+            height: 100%;
+            top: 800px;
             .left-decal {
               width: 350px;
               height: 350px !important;
@@ -758,8 +735,11 @@ body {
   .body-wrapper {
     .slide {
       &.three {
+        min-height: 1200px;
         .content {
+          min-height: 1200px;
           .decals {
+            height: 100%;
             .left-decal {
               width: 300px;
               height: 300px !important;
@@ -801,8 +781,11 @@ body {
         }
       }
       &.three {
+        min-height: 1000px;
         .content {
+          min-height: 1000px;
           .decals {
+            height: 100%;
             .left-decal {
               width: 250px;
               height: 250px !important;
@@ -953,8 +936,11 @@ body {
   .body-wrapper {
     .slide {
       &.three {
+        max-height: 700px;
         .content {
+          max-height: 700px;
           .decals {
+            height: 100%;
             .left-decal {
               width: 200px;
               height: 200px !important;

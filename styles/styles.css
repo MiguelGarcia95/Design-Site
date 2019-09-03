@@ -857,9 +857,11 @@ body {
 @media (max-width: 950px) {
   .body-wrapper .slide.two {
     height: 200vh;
+    min-height: 1950px;
   }
   .body-wrapper .slide.two .content {
     height: 200vh;
+    min-height: 1950px;
   }
   .body-wrapper .slide.two .content .decals {
     height: 200vh;
@@ -896,12 +898,15 @@ body {
   }
   .body-wrapper .slide.three {
     height: 150vh;
+    min-height: 1400px;
   }
   .body-wrapper .slide.three .content {
     height: 150vh;
+    min-height: 1400px;
   }
   .body-wrapper .slide.three .content .decals {
-    top: 400px;
+    height: 100%;
+    top: 800px;
   }
   .body-wrapper .slide.three .content .decals .left-decal {
     width: 350px;
@@ -1009,6 +1014,15 @@ body {
 }
 
 @media (max-width: 750px) {
+  .body-wrapper .slide.three {
+    min-height: 1200px;
+  }
+  .body-wrapper .slide.three .content {
+    min-height: 1200px;
+  }
+  .body-wrapper .slide.three .content .decals {
+    height: 100%;
+  }
   .body-wrapper .slide.three .content .decals .left-decal {
     width: 300px;
     height: 300px !important;
@@ -1043,6 +1057,15 @@ body {
   }
   .body-wrapper .slide.two .content .services .service .service-title {
     font-size: 1.8rem;
+  }
+  .body-wrapper .slide.three {
+    min-height: 1000px;
+  }
+  .body-wrapper .slide.three .content {
+    min-height: 1000px;
+  }
+  .body-wrapper .slide.three .content .decals {
+    height: 100%;
   }
   .body-wrapper .slide.three .content .decals .left-decal {
     width: 250px;
@@ -1169,6 +1192,15 @@ body {
 }
 
 @media (max-width: 450px) {
+  .body-wrapper .slide.three {
+    max-height: 700px;
+  }
+  .body-wrapper .slide.three .content {
+    max-height: 700px;
+  }
+  .body-wrapper .slide.three .content .decals {
+    height: 100%;
+  }
   .body-wrapper .slide.three .content .decals .left-decal {
     width: 200px;
     height: 200px !important;
