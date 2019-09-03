@@ -1085,6 +1085,36 @@ body {
   }
 }
 
+@media (max-width: 450px) {
+  .body-wrapper .slide.three .content .decals .left-decal {
+    width: 200px;
+    height: 200px !important;
+  }
+  .body-wrapper .slide.three .content .decals .left-decal .left-group, .body-wrapper .slide.three .content .decals .left-decal .right-group {
+    width: 200px;
+    height: 200px;
+  }
+  .body-wrapper .slide.three .content .decals .left-decal .cube.top, .body-wrapper .slide.three .content .decals .left-decal .cube.bottom {
+    width: 200px;
+  }
+  .body-wrapper .slide.three .content .decals .left-decal .cube.left, .body-wrapper .slide.three .content .decals .left-decal .cube.right {
+    height: 200px;
+  }
+  .body-wrapper .slide.three .content .title {
+    width: 90%;
+  }
+  .body-wrapper .slide.three .content .title h1 {
+    font-size: 2rem;
+  }
+  .body-wrapper .slide.three .content .subtitle {
+    width: 90%;
+  }
+  .body-wrapper .slide.three .content .details {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+}
+
 @media (max-width: 400px) {
   .body-wrapper .slide.two .content .services .service {
     width: 250px;
@@ -1112,6 +1142,35 @@ body {
     font-size: 1.3rem;
   }
   .body-wrapper .slide.two .content .services .service .service-desc {
+    font-size: 0.9rem;
+  }
+  .body-wrapper .slide.three .content .decals .left-decal {
+    width: 180px;
+    height: 180px !important;
+  }
+  .body-wrapper .slide.three .content .decals .left-decal .left-group, .body-wrapper .slide.three .content .decals .left-decal .right-group {
+    width: 180px;
+    height: 180px;
+  }
+  .body-wrapper .slide.three .content .decals .left-decal .cube.top, .body-wrapper .slide.three .content .decals .left-decal .cube.bottom {
+    width: 180px;
+  }
+  .body-wrapper .slide.three .content .decals .left-decal .cube.left, .body-wrapper .slide.three .content .decals .left-decal .cube.right {
+    height: 180px;
+  }
+  .body-wrapper .slide.three .content .title {
+    width: 100%;
+  }
+  .body-wrapper .slide.three .content .title h1 {
+    font-size: 1.8rem;
+  }
+  .body-wrapper .slide.three .content .subtitle {
+    width: 100%;
+  }
+  .body-wrapper .slide.three .content .subtitle h2 {
+    font-size: 1rem;
+  }
+  .body-wrapper .slide.three .content .details {
     font-size: 0.9rem;
   }
 }

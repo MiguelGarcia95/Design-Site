@@ -868,68 +868,26 @@ body {
   .body-wrapper {
     .slide {
       &.three {
-        // height: 150vh;
         .content {
-          // height: 150vh;
           .decals {
-            // top: 400px;
             .left-decal {
-              // width: 250px;
-              // height: 250px !important;
-              // top: 250px;
-              //  bottom: unset;
-              // left: 0; right: 0;
-              // margin: auto
-              .btn {
-                // width: 130px;
-                // height: 50px;
-                // left: 0; right: 0;
-                // top: 0; bottom: 0;
-                // bottom: 150px;
-                // line-height: 50px;
-                // font-size: 0.9rem;
-              }
+              width: 200px;
+              height: 200px !important;
               .left-group, .right-group {
-                // width: 250px;
-                // height: 250px;
+                width: 200px; height: 200px;
               }
               .cube {
-                // box-shadow: -25px 25px 10px 0px rgba(0,0,0,0.2);
-                &.top, &.bottom {
-                  // width: 250px;
-                  // height: 5px;
-                }
-                &.left, &.right {
-                  // height: 250px;
-                  // width: 5px;
-                }
+                &.top, &.bottom {width: 200px;}
+                &.left, &.right {height: 200px;}
               }
             }      
           }
           .title {
-            // width: 80%;
-            // h1 {font-size: 2.3rem;}
+            width: 90%;
+            h1 {font-size: 2rem;}
           }
-          .subtitle {
-            // width: 50%;
-            // left: 0; right: 0;
-            // margin: auto;
-
-            // height: 40px;
-            // top: 280px;
-            h2 {
-              // text-align: center;
-              // line-height: 40px;
-              // font-size: 1.1rem;
-            }
-          }
-          .details {
-            // right: 0; left: 0;
-            // margin: auto;
-            // width: 60%;
-            // top: 350px;
-            // text-align: center;
-          }
+          .subtitle {width: 90%;}
+          .details {width: 90%;font-size: 0.9rem;}
         }
       }
     }
@@ -976,6 +934,30 @@ body {
               .service-desc {font-size: 0.9rem;}
             }
           }
+        }
+      }
+      &.three {
+        .content {
+          .decals {
+            .left-decal {
+              width: 180px;
+              height: 180px !important;
+              .left-group, .right-group {width: 180px; height: 180px;}
+              .cube {
+                &.top, &.bottom {width: 180px;}
+                &.left, &.right {height: 180px;}
+              }
+            }      
+          }
+          .title {
+            width: 100%;
+            h1 {font-size: 1.8rem;}
+          }
+          .subtitle {
+            width: 100%;
+            h2 {font-size: 1rem;}
+          }
+          .details {font-size: 0.9rem;}
         }
       }
     }
