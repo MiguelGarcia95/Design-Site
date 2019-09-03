@@ -44,11 +44,11 @@ thirdScrollAnimation
 .to('.left-decal', 0.1, {overflow: 'visible'}, '-=1')
 .to('.three .title', 0.1, {textShadow: '-10px 10px 5px rgba(0,0,0,0.1)'})
 .to('.left-decal', 1, {transform: 'rotate(45deg)'})
-.to('.left-decal .btn', 0.5, {transform: 'rotate(-45deg)', right: '20%'})
+.to('.left-decal .btn', 0.5, {transform: 'rotate(-45deg)'})
 .to('.three .subtitle', 1, {scale: 1}, '-=1')
 .to('.three .details', 1, {scale: 1}, '-=0.5')
-.to('.left-group', 1, {left: '+=10%', top: '+=20%'}, '-=1')
-.to('.right-group', 1, {right: '+=30%', bottom: '+=20%'}, '-=1');
+.to('.left-group', 1, {left: '+=20%', top: '+=20%'}, '-=1')
+.to('.right-group', 1, {right: '+=20%', bottom: '+=20%'}, '-=1');
 
 var sceneThree = new ScrollMagic.Scene({
   triggerElement: '.three',

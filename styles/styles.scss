@@ -496,8 +496,9 @@ body {
           .decals {
             .left-decal {
               width: 400px;
+              height: 400px !important;
+
               left: 150px;
-              .btn {bottom: 100px;}
               .left-group, .right-group {width: 400px; height: 400px;}
               .cube {
                 &.top, &.bottom {width: 400px;}
@@ -559,10 +560,10 @@ body {
           .decals {
             .left-decal {
               width: 350px;
+              height: 350px !important;
               left: 50px;
               .btn {
                 width: 150px;
-                bottom: 150px;
                 font-size: 1rem;
               }
               .left-group, .right-group {
@@ -635,6 +636,8 @@ body {
             top: 400px;
             .left-decal {
               width: 350px;
+              height: 350px !important;
+
               top: 250px; bottom: unset;
               left: 0; right: 0;
               margin: auto;
@@ -700,74 +703,22 @@ body {
   .body-wrapper {
     .slide {
       &.three {
-        height: 150vh;
         .content {
-          height: 150vh;
           .decals {
-            top: 400px;
             .left-decal {
-              width: 350px;
-              top: 250px; bottom: unset;
-              left: 0; right: 0;
-              margin: auto;
-              .btn {
-                // width: 150px;
-                // height: 50px;
-                // left: 0; right: 0;
-                // top: 0; bottom: 0;
-                // bottom: 150px;
-                // line-height: 50px;
-                // font-size: 1rem;
-              }
-              .left-group, .right-group {
-                // width: 350px;
-                // height: 350px;
-              }
+              width: 300px;
+              height: 300px !important;
+              .btn { width: 130px; font-size: 0.9rem; }
+              .left-group, .right-group { width: 300px; height: 300px; }
               .cube {
-                // box-shadow: -25px 25px 15px 0px rgba(0,0,0,0.2);
-                &.top, &.bottom {
-                  // width: 350px;
-                  // height: 10px;
-                }
-                &.left, &.right {
-                  // height: 350px;
-                  // width: 10px;
-                }
+                &.top, &.bottom {width: 300px;}
+                &.left, &.right {height: 300px;}
               }
             }      
           }
           .title {
-            width: 50%;
-            // left: 20px;
-            left: 0; right: 0;
-            margin: auto;
-            top: 100px;
-            h1 {
-              text-align: center;
-              margin-left: 0px;
-              // line-height: 80px;
-              // font-size: 2.5rem;
-            }
-          }
-          .subtitle {
-            width: 50%;
-            left: 0; right: 0;
-            margin: auto;
-
-            // height: 40px;
-            top: 280px;
-            h2 {
-              text-align: center;
-              // line-height: 40px;
-              // font-size: 1.1rem;
-            }
-          }
-          .details {
-            right: 0; left: 0;
-            margin: auto;
-            width: 60%;
-            top: 350px;
-            text-align: center;
+            width: 80%;
+            h1 {font-size: 2.3rem;}
           }
         }
       }
@@ -791,6 +742,28 @@ body {
             .service {
               .service-title {font-size: 1.8rem;}
             }
+          }
+        }
+      }
+      &.three {
+        .content {
+          .decals {
+            .left-decal {
+              width: 250px;
+              height: 250px !important;
+              .left-group, .right-group {
+                width: 250px; height: 250px;
+              }
+              .cube {
+                box-shadow: -25px 25px 10px 0px rgba(0,0,0,0.2);
+                &.top, &.bottom {
+                  width: 250px; height: 5px;
+                }
+                &.left, &.right {
+                  height: 250px; width: 5px;
+                }
+              }
+            }      
           }
         }
       }
@@ -884,6 +857,78 @@ body {
               line-height: 180px;
               font-size: 5rem;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 450px) {
+  .body-wrapper {
+    .slide {
+      &.three {
+        // height: 150vh;
+        .content {
+          // height: 150vh;
+          .decals {
+            // top: 400px;
+            .left-decal {
+              // width: 250px;
+              // height: 250px !important;
+              // top: 250px;
+              //  bottom: unset;
+              // left: 0; right: 0;
+              // margin: auto
+              .btn {
+                // width: 130px;
+                // height: 50px;
+                // left: 0; right: 0;
+                // top: 0; bottom: 0;
+                // bottom: 150px;
+                // line-height: 50px;
+                // font-size: 0.9rem;
+              }
+              .left-group, .right-group {
+                // width: 250px;
+                // height: 250px;
+              }
+              .cube {
+                // box-shadow: -25px 25px 10px 0px rgba(0,0,0,0.2);
+                &.top, &.bottom {
+                  // width: 250px;
+                  // height: 5px;
+                }
+                &.left, &.right {
+                  // height: 250px;
+                  // width: 5px;
+                }
+              }
+            }      
+          }
+          .title {
+            // width: 80%;
+            // h1 {font-size: 2.3rem;}
+          }
+          .subtitle {
+            // width: 50%;
+            // left: 0; right: 0;
+            // margin: auto;
+
+            // height: 40px;
+            // top: 280px;
+            h2 {
+              // text-align: center;
+              // line-height: 40px;
+              // font-size: 1.1rem;
+            }
+          }
+          .details {
+            // right: 0; left: 0;
+            // margin: auto;
+            // width: 60%;
+            // top: 350px;
+            // text-align: center;
           }
         }
       }

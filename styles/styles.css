@@ -755,10 +755,8 @@ body {
 @media (max-width: 1350px) {
   .body-wrapper .slide.three .content .decals .left-decal {
     width: 400px;
+    height: 400px !important;
     left: 150px;
-  }
-  .body-wrapper .slide.three .content .decals .left-decal .btn {
-    bottom: 100px;
   }
   .body-wrapper .slide.three .content .decals .left-decal .left-group, .body-wrapper .slide.three .content .decals .left-decal .right-group {
     width: 400px;
@@ -814,11 +812,11 @@ body {
 @media (max-width: 1150px) {
   .body-wrapper .slide.three .content .decals .left-decal {
     width: 350px;
+    height: 350px !important;
     left: 50px;
   }
   .body-wrapper .slide.three .content .decals .left-decal .btn {
     width: 150px;
-    bottom: 150px;
     font-size: 1rem;
   }
   .body-wrapper .slide.three .content .decals .left-decal .left-group, .body-wrapper .slide.three .content .decals .left-decal .right-group {
@@ -900,6 +898,7 @@ body {
   }
   .body-wrapper .slide.three .content .decals .left-decal {
     width: 350px;
+    height: 350px !important;
     top: 250px;
     bottom: unset;
     left: 0;
@@ -958,51 +957,29 @@ body {
 }
 
 @media (max-width: 750px) {
-  .body-wrapper .slide.three {
-    height: 150vh;
-  }
-  .body-wrapper .slide.three .content {
-    height: 150vh;
-  }
-  .body-wrapper .slide.three .content .decals {
-    top: 400px;
-  }
   .body-wrapper .slide.three .content .decals .left-decal {
-    width: 350px;
-    top: 250px;
-    bottom: unset;
-    left: 0;
-    right: 0;
-    margin: auto;
+    width: 300px;
+    height: 300px !important;
+  }
+  .body-wrapper .slide.three .content .decals .left-decal .btn {
+    width: 130px;
+    font-size: 0.9rem;
+  }
+  .body-wrapper .slide.three .content .decals .left-decal .left-group, .body-wrapper .slide.three .content .decals .left-decal .right-group {
+    width: 300px;
+    height: 300px;
+  }
+  .body-wrapper .slide.three .content .decals .left-decal .cube.top, .body-wrapper .slide.three .content .decals .left-decal .cube.bottom {
+    width: 300px;
+  }
+  .body-wrapper .slide.three .content .decals .left-decal .cube.left, .body-wrapper .slide.three .content .decals .left-decal .cube.right {
+    height: 300px;
   }
   .body-wrapper .slide.three .content .title {
-    width: 50%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 100px;
+    width: 80%;
   }
   .body-wrapper .slide.three .content .title h1 {
-    text-align: center;
-    margin-left: 0px;
-  }
-  .body-wrapper .slide.three .content .subtitle {
-    width: 50%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 280px;
-  }
-  .body-wrapper .slide.three .content .subtitle h2 {
-    text-align: center;
-  }
-  .body-wrapper .slide.three .content .details {
-    right: 0;
-    left: 0;
-    margin: auto;
-    width: 60%;
-    top: 350px;
-    text-align: center;
+    font-size: 2.3rem;
   }
 }
 
@@ -1014,6 +991,26 @@ body {
   }
   .body-wrapper .slide.two .content .services .service .service-title {
     font-size: 1.8rem;
+  }
+  .body-wrapper .slide.three .content .decals .left-decal {
+    width: 250px;
+    height: 250px !important;
+  }
+  .body-wrapper .slide.three .content .decals .left-decal .left-group, .body-wrapper .slide.three .content .decals .left-decal .right-group {
+    width: 250px;
+    height: 250px;
+  }
+  .body-wrapper .slide.three .content .decals .left-decal .cube {
+    -webkit-box-shadow: -25px 25px 10px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: -25px 25px 10px 0px rgba(0, 0, 0, 0.2);
+  }
+  .body-wrapper .slide.three .content .decals .left-decal .cube.top, .body-wrapper .slide.three .content .decals .left-decal .cube.bottom {
+    width: 250px;
+    height: 5px;
+  }
+  .body-wrapper .slide.three .content .decals .left-decal .cube.left, .body-wrapper .slide.three .content .decals .left-decal .cube.right {
+    height: 250px;
+    width: 5px;
   }
 }
 
