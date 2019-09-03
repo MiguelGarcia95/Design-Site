@@ -142,6 +142,7 @@ body {
 
 .body-wrapper .slide.one {
   background: #5824D4;
+  overflow: hidden;
 }
 
 .body-wrapper .slide.one .decals {
@@ -1171,7 +1172,7 @@ body {
 
 @media (max-width: 480px) {
   .body-wrapper .slide.one .content .title {
-    width: 80%;
+    max-width: 100%;
     height: 180px;
   }
   .body-wrapper .slide.one .content .title .title-decal {
