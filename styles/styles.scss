@@ -1040,6 +1040,9 @@ body {
       &.two {
         .content {
           .services {
+            .title {
+              h1 {font-size: 2.5rem;}
+            }
             .service {
               .service-title {left: 0; right: 0; text-align: center;}
             }
